@@ -62,5 +62,6 @@ export default defineConfig({
     globals: true,
     setupFiles: ['tests/setup.ts'],
     include: ['tests/*.test.{ts,tsx}'],
+    testTimeout: 60000, // 共用主機（CI）比較慢，3000 個隨機突變的對照測試在上面可能超過預設 5 秒
   },
 });
