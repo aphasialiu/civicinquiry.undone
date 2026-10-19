@@ -1,0 +1,137 @@
+{
+  "authors": [
+    {
+      "credentialText": "",
+      "displayName": "Test Author",
+      "id": "test-author"
+    }
+  ],
+  "description": "Fixture for AT-13. Not real educational content.",
+  "direction": "ltr",
+  "items": [
+    {
+      "authorIds": [
+        "test-author"
+      ],
+      "concepts": [
+        "fixture.sci.concept-1"
+      ],
+      "context": "In a vacuum, you release an iron ball and a feather at the same moment.",
+      "discussionPrompts": [
+        "Which everyday experiences make heavier things seem to fall faster?"
+      ],
+      "disputeScope": "none",
+      "epistemic": "settled",
+      "evidenceIds": [
+        "fall"
+      ],
+      "explanation": {
+        "alternatives": "In air the result differs.",
+        "limitations": "This question covers a vacuum only.",
+        "mechanism": "Gravitational acceleration does not depend on mass.",
+        "misconception": "Mistaking the effect of air resistance for a difference in gravity.",
+        "possibleReasons": "Everyday differences come from air resistance.",
+        "short": "Without air resistance, every object falls with the same acceleration."
+      },
+      "governance": {
+        "lastReviewedAt": null,
+        "lifecycle": "draft",
+        "notes": "AT-13 測試題庫（fixture），不是正式教育內容。",
+        "reviewers": [],
+        "verification": "unreviewed"
+      },
+      "id": "phys-fall",
+      "intuition": {
+        "kind": "value",
+        "options": [
+          {
+            "id": "v1",
+            "label": "Agree more"
+          },
+          {
+            "id": "v2",
+            "label": "Disagree more"
+          },
+          {
+            "id": "v3",
+            "label": "No position yet"
+          }
+        ],
+        "prompt": "Heavier things should fall faster."
+      },
+      "jurisdiction": "global",
+      "knowledge": {
+        "correctOptionIds": [
+          "b"
+        ],
+        "options": [
+          {
+            "id": "a",
+            "label": "The iron ball"
+          },
+          {
+            "id": "b",
+            "label": "They arrive together"
+          },
+          {
+            "id": "c",
+            "label": "The feather"
+          }
+        ],
+        "prompt": "In a vacuum, which reaches the ground first?",
+        "rationale": "Without air resistance, all objects accelerate equally.",
+        "type": "single"
+      },
+      "language": "en",
+      "readingIds": [
+        "fall"
+      ],
+      "search": {
+        "categories": [
+          "news",
+          "official"
+        ],
+        "keywords": [
+          "free fall vacuum"
+        ],
+        "language": "en",
+        "profileId": "physics-phys-fall-en",
+        "region": "global"
+      },
+      "topic": "How fast things fall",
+      "translationOf": {
+        "id": "phys-fall",
+        "locale": "zh-Hant-TW",
+        "version": "0.1.0"
+      },
+      "validity": {
+        "asOf": "2026-10-18",
+        "knowledgeVersion": "fixture（測試用，未經審查）",
+        "reviewDueAt": "2027-04-16T03:00:00.000Z",
+        "validFrom": "2026-10-18T02:59:00.000Z",
+        "validUntil": null
+      },
+      "version": "0.1.0"
+    }
+  ],
+  "license": "UNLICENSED",
+  "locale": "en",
+  "namespace": "fixture.sci",
+  "quizId": "physics",
+  "schemaVersion": "1.0.0",
+  "sources": [
+    {
+      "accessedAt": "2026-10-18",
+      "id": "fall",
+      "locator": "Free fall in a vacuum",
+      "publishedAt": null,
+      "publisher": "Wikipedia",
+      "rights": "link_only",
+      "title": "Free fall",
+      "type": "other",
+      "url": "https://en.wikipedia.org/wiki/Free_fall"
+    }
+  ],
+  "title": "[Test fixture] Everyday Physics",
+  "version": "0.1.0"
+}

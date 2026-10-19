@@ -1,0 +1,132 @@
+{
+  "authors": [
+    {
+      "credentialText": "",
+      "displayName": "測試作者",
+      "id": "author-1"
+    }
+  ],
+  "description": "AT-13 測試用題庫（fixture），不是正式教育內容。",
+  "direction": "ltr",
+  "items": [
+    {
+      "authorIds": [
+        "author-1"
+      ],
+      "concepts": [
+        "fixture.hist.concept-1"
+      ],
+      "context": "一般流行的說法是拿破崙個子很矮。",
+      "discussionPrompts": [
+        "你還聽過哪些「大家都知道」、但沒查過的說法？"
+      ],
+      "disputeScope": "none",
+      "epistemic": "settled",
+      "evidenceIds": [
+        "nap"
+      ],
+      "explanation": {
+        "alternatives": "各來源的數字略有出入。",
+        "limitations": "本題只談身高紀錄的換算。",
+        "mechanism": "法制與英制的英寸長度不同。",
+        "misconception": "把英制數字直接當成法制數字。",
+        "possibleReasons": "英國漫畫的諷刺也強化了這個印象。",
+        "short": "換算單位後，他的身高和當時一般法國男性相近，「矮子」的印象有不少來自單位混淆與宣傳。"
+      },
+      "governance": {
+        "lastReviewedAt": null,
+        "lifecycle": "draft",
+        "notes": "AT-13 測試題庫（fixture），不是正式教育內容。",
+        "reviewers": [],
+        "verification": "unreviewed"
+      },
+      "id": "hist-height",
+      "intuition": {
+        "kind": "value",
+        "options": [
+          {
+            "id": "v1",
+            "label": "較同意"
+          },
+          {
+            "id": "v2",
+            "label": "較不同意"
+          },
+          {
+            "id": "v3",
+            "label": "尚無主張"
+          }
+        ],
+        "prompt": "拿破崙是個矮子。"
+      },
+      "jurisdiction": "global",
+      "knowledge": {
+        "correctOptionIds": [
+          "b"
+        ],
+        "options": [
+          {
+            "id": "a",
+            "label": "明顯低於當時一般法國男性"
+          },
+          {
+            "id": "b",
+            "label": "與當時一般法國男性相近"
+          },
+          {
+            "id": "c",
+            "label": "明顯高於當時一般法國男性"
+          }
+        ],
+        "prompt": "以現存紀錄換算成公制，他的身高大約？",
+        "rationale": "法制英寸與英制英寸不同，換算後約 1.69 公尺。",
+        "type": "single"
+      },
+      "language": "zh-Hant-TW",
+      "readingIds": [
+        "nap"
+      ],
+      "search": {
+        "categories": [
+          "news",
+          "official"
+        ],
+        "keywords": [
+          "Napoleon height"
+        ],
+        "language": "zh-Hant",
+        "profileId": "napoleon-hist-height-zh-hant-tw",
+        "region": "global"
+      },
+      "topic": "拿破崙的身高",
+      "validity": {
+        "asOf": "2026-10-18",
+        "knowledgeVersion": "fixture（測試用，未經審查）",
+        "reviewDueAt": "2027-04-16T03:00:00.000Z",
+        "validFrom": "2026-10-18T02:59:00.000Z",
+        "validUntil": null
+      },
+      "version": "0.1.0"
+    }
+  ],
+  "license": "UNLICENSED",
+  "locale": "zh-Hant-TW",
+  "namespace": "fixture.hist",
+  "quizId": "napoleon",
+  "schemaVersion": "1.0.0",
+  "sources": [
+    {
+      "accessedAt": "2026-10-18",
+      "id": "nap",
+      "locator": "外貌與身高的段落",
+      "publishedAt": null,
+      "publisher": "維基百科",
+      "rights": "link_only",
+      "title": "拿破崙一世",
+      "type": "other",
+      "url": "https://en.wikipedia.org/wiki/Napoleon"
+    }
+  ],
+  "title": "【測試題庫】歷史小常識",
+  "version": "0.1.0"
+}

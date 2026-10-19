@@ -1,0 +1,2072 @@
+{
+  "schemaVersion": "1.0.0",
+  "namespace": "prototype.tw",
+  "quizId": "constitution",
+  "version": "0.1.0",
+  "title": "民主不是你想的那樣",
+  "description": "這是供訪談、教育試測與格式驗證的原型題庫，法源經初步比對，尚未經過獨立的法律與教育專業審查。",
+  "locale": "zh-Hant-TW",
+  "direction": "ltr",
+  "license": "UNLICENSED",
+  "authors": [
+    {
+      "id": "spec-editor",
+      "displayName": "規格編製原型",
+      "credentialText": "AI協助整理；不代表法律專業認證"
+    }
+  ],
+  "sources": [
+    {
+      "id": "l01",
+      "title": "中華民國憲法",
+      "url": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=A0000001",
+      "type": "law",
+      "publisher": "全國法規資料庫",
+      "publishedAt": "1947-01-01",
+      "accessedAt": "2026-10-17",
+      "locator": "第63條、第70條（預算審議與增加支出提議）；須與增修條文及相關解釋合讀",
+      "rights": "link_only"
+    },
+    {
+      "id": "l02",
+      "title": "司法院釋字第391號解釋",
+      "url": "https://cons.judicial.gov.tw/docdata.aspx?fid=100&id=310572",
+      "type": "judgment",
+      "publisher": "憲法法庭",
+      "publishedAt": "1995-12-08",
+      "accessedAt": "2026-10-17",
+      "locator": "解釋文：中央政府總預算案款項目節間移動增減之限制；理由與不同意見須分開閱讀",
+      "rights": "link_only"
+    },
+    {
+      "id": "l03",
+      "title": "中華民國憲法第171條",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=A0000001&flno=171",
+      "type": "law",
+      "publisher": "全國法規資料庫",
+      "publishedAt": null,
+      "accessedAt": "2026-10-17",
+      "locator": "第171條（法律不得牴觸憲法）",
+      "rights": "link_only"
+    },
+    {
+      "id": "l04",
+      "title": "中華民國憲法第23條",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=A0000001&flno=23",
+      "type": "law",
+      "publisher": "全國法規資料庫",
+      "publishedAt": null,
+      "accessedAt": "2026-10-17",
+      "locator": "第23條（限制基本權的必要性與法律要求）",
+      "rights": "link_only"
+    },
+    {
+      "id": "l05",
+      "title": "中華民國憲法增修條文",
+      "url": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=A0000002",
+      "type": "law",
+      "publisher": "全國法規資料庫",
+      "publishedAt": "2005-06-10",
+      "accessedAt": "2026-10-17",
+      "locator": "第2、3、4條（解散、緊急命令、行政院責任與國情報告）；版本頁列2005-06-10修正",
+      "rights": "link_only"
+    },
+    {
+      "id": "l06",
+      "title": "憲法法庭113年憲判字第9號判決",
+      "url": "https://cons.judicial.gov.tw/docdata.aspx?fid=97&id=352966",
+      "type": "judgment",
+      "publisher": "憲法法庭",
+      "publishedAt": null,
+      "accessedAt": "2026-10-17",
+      "locator": "主文二及相關理由（聽取國情報告不等同強制總統答詢）",
+      "rights": "link_only"
+    },
+    {
+      "id": "l11",
+      "title": "行政程序法",
+      "url": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=A0030055",
+      "type": "law",
+      "publisher": "全國法規資料庫",
+      "publishedAt": null,
+      "accessedAt": "2026-10-17",
+      "locator": "第4、10條（依法行政及裁量界限）；不足以回答所有規範衝突",
+      "rights": "link_only"
+    },
+    {
+      "id": "l12",
+      "title": "中華民國憲法第53條",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=A0000001&flno=53",
+      "type": "law",
+      "publisher": "全國法規資料庫",
+      "publishedAt": null,
+      "accessedAt": "2026-10-17",
+      "locator": "第53條（行政院的憲法定位）",
+      "rights": "link_only"
+    },
+    {
+      "id": "l13",
+      "title": "憲法法庭115年憲判字第7號判決",
+      "url": "https://cons.judicial.gov.tw/docdata.aspx?fid=38&id=352187",
+      "type": "judgment",
+      "publisher": "憲法法庭",
+      "publishedAt": "2026-10-08",
+      "accessedAt": "2026-10-17",
+      "locator": "主文一（移民業務廣告事前審查規定違憲失效）",
+      "rights": "link_only"
+    },
+    {
+      "id": "l14",
+      "title": "司法院官方案件說明（115憲判7）",
+      "url": "https://www.judicial.gov.tw/tw/cp-1429-1630676-9fd42-1.html",
+      "type": "official",
+      "publisher": "司法院",
+      "publishedAt": null,
+      "accessedAt": "2026-10-17",
+      "locator": "新聞稿或案件說明頁（說明性文件，不取代判決主文）",
+      "rights": "link_only"
+    },
+    {
+      "id": "l15",
+      "title": "中華民國憲法第14條",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=A0000001&flno=14",
+      "type": "law",
+      "publisher": "全國法規資料庫",
+      "publishedAt": null,
+      "accessedAt": "2026-10-18",
+      "locator": "第14條（集會結社自由）",
+      "rights": "link_only"
+    },
+    {
+      "id": "l16",
+      "title": "司法院釋字第748號解釋",
+      "url": "https://cons.judicial.gov.tw/docdata.aspx?fid=100&id=280505",
+      "type": "judgment",
+      "publisher": "憲法法庭",
+      "publishedAt": null,
+      "accessedAt": "2026-10-18",
+      "locator": "釋字第748號解釋文",
+      "rights": "link_only"
+    },
+    {
+      "id": "l17",
+      "title": "公民投票法第30條",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=D0020050&flno=30",
+      "type": "law",
+      "publisher": "全國法規資料庫",
+      "publishedAt": null,
+      "accessedAt": "2026-10-18",
+      "locator": "第30條（公民投票案通過後的處理方式）",
+      "rights": "link_only"
+    },
+    {
+      "id": "l18",
+      "title": "中華民國憲法第78條",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=A0000001&flno=78",
+      "type": "law",
+      "publisher": "全國法規資料庫",
+      "publishedAt": null,
+      "accessedAt": "2026-10-18",
+      "locator": "第78條（司法院解釋憲法）",
+      "rights": "link_only"
+    },
+    {
+      "id": "l19",
+      "title": "中華民國憲法第17條",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=A0000001&flno=17",
+      "type": "law",
+      "publisher": "全國法規資料庫",
+      "publishedAt": null,
+      "accessedAt": "2026-10-18",
+      "locator": "第17條（創制複決之權）",
+      "rights": "link_only"
+    },
+    {
+      "id": "l20",
+      "title": "中華民國憲法增修條文第12條",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=A0000002&flno=12",
+      "type": "law",
+      "publisher": "全國法規資料庫",
+      "publishedAt": null,
+      "accessedAt": "2026-10-18",
+      "locator": "增修條文第12條（修憲程序）",
+      "rights": "link_only"
+    },
+    {
+      "id": "l21",
+      "title": "司法院釋字第七四八號解釋施行法第2條",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=B0000008&flno=2",
+      "type": "law",
+      "publisher": "全國法規資料庫",
+      "publishedAt": null,
+      "accessedAt": "2026-10-18",
+      "locator": "第2條（永久結合關係）",
+      "rights": "link_only"
+    },
+    {
+      "id": "l22",
+      "title": "憲法法庭113年憲判字第8號判決",
+      "url": "https://cons.judicial.gov.tw/docdata.aspx?fid=38&id=496626",
+      "type": "judgment",
+      "publisher": "憲法法庭",
+      "publishedAt": null,
+      "accessedAt": "2026-10-18",
+      "locator": "主文第一項、第六項",
+      "rights": "link_only"
+    },
+    {
+      "id": "l23",
+      "title": "中華民國憲法第15條",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=A0000001&flno=15",
+      "type": "law",
+      "publisher": "全國法規資料庫",
+      "publishedAt": null,
+      "accessedAt": "2026-10-18",
+      "locator": "第15條（生存權）",
+      "rights": "link_only"
+    },
+    {
+      "id": "l24",
+      "title": "公職人員選舉罷免法第104條",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=D0020010&flno=104",
+      "type": "law",
+      "publisher": "全國法規資料庫",
+      "publishedAt": null,
+      "accessedAt": "2026-10-18",
+      "locator": "第104條（選舉期間散布不實訊息）",
+      "rights": "link_only"
+    },
+    {
+      "id": "l25",
+      "title": "中華民國憲法第11條",
+      "url": "https://law.moj.gov.tw/LawClass/LawSingle.aspx?pcode=A0000001&flno=11",
+      "type": "law",
+      "publisher": "全國法規資料庫",
+      "publishedAt": null,
+      "accessedAt": "2026-10-18",
+      "locator": "第11條（言論自由）",
+      "rights": "link_only"
+    }
+  ],
+  "items": [
+    {
+      "id": "tw-budget-01",
+      "version": "0.1.0",
+      "authorIds": [
+        "spec-editor"
+      ],
+      "concepts": [
+        "civics.separation",
+        "civics.accountability"
+      ],
+      "topic": "調整預算項目",
+      "language": "zh-Hant-TW",
+      "jurisdiction": "TW",
+      "context": "立法院正在審議行政院提出的中央政府總預算案。立法委員覺得教育比交通重要，打算自己把交通項目刪掉一部分，再把同樣的錢加到教育項目，總金額完全不變。",
+      "intuition": {
+        "kind": "value",
+        "prompt": "國會認為教育比交通重要時，應該能在總額不變下自行重分配預算。",
+        "options": [
+          {
+            "id": "v1",
+            "label": "較同意"
+          },
+          {
+            "id": "v2",
+            "label": "較不同意"
+          },
+          {
+            "id": "v3",
+            "label": "尚無主張"
+          }
+        ]
+      },
+      "knowledge": {
+        "type": "single",
+        "prompt": "這樣調整，符合憲法嗎？",
+        "options": [
+          {
+            "id": "a",
+            "label": "符合。總額沒變，人民沒有多負擔一毛錢，只是調整錢花在哪裡，這正是國會審預算的本意。"
+          },
+          {
+            "id": "b",
+            "label": "不一定符合。總額沒變不代表沒問題：預算由行政院提出，立法院自己增加某個項目的支出，憲法有限制。"
+          },
+          {
+            "id": "c",
+            "label": "符合。預算是人民的錢，代表人民的立法院最有資格決定怎麼花，只要刪的是可以節省的項目就合理。"
+          }
+        ],
+        "correctOptionIds": [
+          "b"
+        ],
+        "rationale": "憲法第70條與釋字391解釋文；總額不變不能單獨排除個別項目增加支出的限制。"
+      },
+      "explanation": {
+        "short": "答案：不能只因為總額不變，就說這樣調整符合憲法。依憲法第70條與釋字第391號解釋，立法院對預算案增加個別項目的支出，仍然受到限制。",
+        "mechanism": "憲法第70條規定：立法院對於行政院所提預算案，不得為增加支出之提議。釋字第391號對中央政府總預算案款項目節之間的移動增減也設有限制，並以政策責任歸屬與權力分立來說明。「總額不變」不能單獨排除個別項目增加支出的限制。",
+        "possibleReasons": "該解釋以政策責任歸屬及行政、立法分工說明限制。這是解釋所說明的理由，不是唯一可能的立法目的。",
+        "alternatives": "國會修正預算的空間可以有不同的制度設計；其他國家的作法須另查各自的法源，不能直接套用到臺灣。",
+        "limitations": "不能用本題直接判斷所有刪減、凍結、附帶決議或追加預算是否合憲，它們各有不同的條件。實際爭議須另看行為與程序。",
+        "misconception": "「總額沒變就是沒多花錢」、「民意代表就該自己決定」聽起來合理。但照這個想法做，誰提出預算、誰為花錢的結果負責就會變得模糊：預算由行政部門提出與執行，立法院審查把關；責任分不清，民主制度最重要的「出問題時找得到人負責」就會落空。"
+      },
+      "epistemic": "disputed",
+      "disputeScope": "rationale",
+      "evidenceIds": [
+        "l01",
+        "l02"
+      ],
+      "readingIds": [
+        "l02"
+      ],
+      "discussionPrompts": [
+        "總額與單項支出有何不同？",
+        "重分配之後的政策結果，應該由誰負責？",
+        "報導描述的是預算審議，還是預算執行？"
+      ],
+      "search": {
+        "profileId": "tw-budget",
+        "keywords": [
+          "中央政府總預算 項目移動 釋字391",
+          "預算審議 凍結 刪減 差異",
+          "parliament budget amendment powers"
+        ],
+        "categories": [
+          "news",
+          "argument",
+          "comparison",
+          "official",
+          "academic"
+        ],
+        "region": "TW",
+        "language": "zh-Hant"
+      },
+      "validity": {
+        "asOf": "2026-10-17",
+        "validFrom": "2026-10-16T16:00:00Z",
+        "validUntil": null,
+        "reviewDueAt": "2026-11-15T16:00:00Z",
+        "knowledgeVersion": "憲法第70條及釋字391；2026-10-17初查，不代表已完成後續法制排除查核"
+      },
+      "governance": {
+        "lifecycle": "draft",
+        "verification": "unreviewed",
+        "lastReviewedAt": null,
+        "reviewers": [],
+        "notes": "官方法源已初查；專業法律與教育審查尚未完成。待審：後續法源與題幹涵蓋界線，不得直接套入任何當年個案。法規資料庫整編延遲須於發布前補查。"
+      },
+      "extensions": {
+        "civic.basis": [
+          {
+            "sourceId": "l01",
+            "quote": "立法院對於行政院所提預算案，不得為增加支出之提議。",
+            "locator": "憲法第70條"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tw-majority-02",
+      "version": "0.1.0",
+      "authorIds": [
+        "spec-editor"
+      ],
+      "concepts": [
+        "civics.majority-limits",
+        "civics.constitutional-supremacy"
+      ],
+      "topic": "多數支持的法律",
+      "language": "zh-Hant-TW",
+      "jurisdiction": "TW",
+      "context": "國會通過一部限制人民某項權利的法律。投票完全依照程序，而且民調顯示多數人支持。",
+      "intuition": {
+        "kind": "value",
+        "prompt": "只要多數民意支持，國會就應有最後決定權。",
+        "options": [
+          {
+            "id": "v1",
+            "label": "較同意"
+          },
+          {
+            "id": "v2",
+            "label": "較不同意"
+          },
+          {
+            "id": "v3",
+            "label": "尚無主張"
+          }
+        ]
+      },
+      "knowledge": {
+        "type": "single",
+        "prompt": "這部法律一定符合憲法嗎？",
+        "options": [
+          {
+            "id": "a",
+            "label": "一定符合。法律是依程序表決通過的，又有多數人支持，在民主國家這就是最高的正當性。"
+          },
+          {
+            "id": "b",
+            "label": "不一定。程序合法、多數支持之外，還要看這部法律的內容有沒有牴觸憲法保障的權利。"
+          },
+          {
+            "id": "c",
+            "label": "只要審議時有充分討論、公開聽取各方意見，就符合憲法，因為民主靠的是公平的程序。"
+          },
+          {
+            "id": "d",
+            "label": "一定符合。真正違憲的情況只會出現在投票造假或程序違法；內容是多數人的選擇，就該尊重。"
+          }
+        ],
+        "correctOptionIds": [
+          "b"
+        ],
+        "rationale": "憲法第171條（法律不得牴觸憲法）與第23條（限制基本權須符合必要性並以法律為之）；多數決與憲法限制是不同層次的檢查。"
+      },
+      "explanation": {
+        "short": "答案：不能。表決通過只說明「決定是怎麼作成的」，沒有說明「內容是否符合憲法」。",
+        "mechanism": "憲法第171條：法律與憲法牴觸者無效。憲法第23條：限制人民的自由權利，必須符合必要性，並以法律為之。所以「多數決的程序」與「內容是否合憲」是兩個不同層次的檢查。本題不判斷任何具體的法律是否違憲。",
+        "possibleReasons": "權利保障可以避免當下的多數忽略少數。",
+        "alternatives": "如何配置司法審查、由誰來審查，本身是可以討論的制度選擇。",
+        "limitations": "不能反過來說民意不重要，也不能說少數反對就足以否決法律。",
+        "misconception": "「多數支持就是對的」聽起來就是民主。但如果多數的決定不受任何限制，少數人的權利隨時可以被多數票拿走；今天你在多數，明天你可能就在少數。"
+      },
+      "epistemic": "settled",
+      "disputeScope": "none",
+      "evidenceIds": [
+        "l03",
+        "l04"
+      ],
+      "readingIds": [
+        "l13"
+      ],
+      "discussionPrompts": [
+        "表決程序和法律內容，各要查什麼？",
+        "若你支持某項政策、卻反對達成它的手段，是否矛盾？",
+        "要判斷這部法律是否合憲，還缺哪些資訊？"
+      ],
+      "search": {
+        "profileId": "tw-majority",
+        "keywords": [
+          "多數決 基本權 比例原則",
+          "移民廣告 115憲判7",
+          "constitutional review majority rights"
+        ],
+        "categories": [
+          "news",
+          "argument",
+          "comparison",
+          "official",
+          "academic"
+        ],
+        "region": "TW",
+        "language": "zh-Hant"
+      },
+      "validity": {
+        "asOf": "2026-10-17",
+        "validFrom": "2026-10-16T16:00:00Z",
+        "validUntil": null,
+        "reviewDueAt": "2026-11-15T16:00:00Z",
+        "knowledgeVersion": "憲法第171條、第23條；2026-10-17初查"
+      },
+      "governance": {
+        "lifecycle": "draft",
+        "verification": "unreviewed",
+        "lastReviewedAt": null,
+        "reviewers": [],
+        "notes": "待審：避免解釋被讀成「司法的任何判斷都不容批評」。"
+      },
+      "extensions": {
+        "civic.basis": [
+          {
+            "sourceId": "l03",
+            "quote": "法律與憲法牴觸者無效。",
+            "locator": "憲法第171條"
+          },
+          {
+            "sourceId": "l04",
+            "quote": "以上各條列舉之自由權利，除為防止妨礙他人自由、避免緊急危難、維持社會秩序，或增進公共利益所必要者外，不得以法律限制之。",
+            "locator": "憲法第23條"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tw-dissolution-03",
+      "version": "0.1.0",
+      "authorIds": [
+        "spec-editor"
+      ],
+      "concepts": [
+        "civics.legitimacy",
+        "civics.power-conditions"
+      ],
+      "topic": "總統與國會僵持",
+      "language": "zh-Hant-TW",
+      "jurisdiction": "TW",
+      "context": "立法院沒有通過對行政院長的不信任案。總統和國會因為政策長期對立，總統說：「我是全民直選的，得票比任何立委都高，應該可以解散國會，讓人民重新選。」",
+      "intuition": {
+        "kind": "value",
+        "prompt": "總統與國會陷入嚴重政治僵局時，總統應能把議題交回人民重新選舉。",
+        "options": [
+          {
+            "id": "v1",
+            "label": "較同意"
+          },
+          {
+            "id": "v2",
+            "label": "較不同意"
+          },
+          {
+            "id": "v3",
+            "label": "尚無主張"
+          }
+        ]
+      },
+      "knowledge": {
+        "type": "single",
+        "prompt": "總統可以因為這樣，就把立法院解散嗎？",
+        "options": [
+          {
+            "id": "a",
+            "label": "可以。總統是全民直選，代表的民意比任何一位立委都大；國會長期擋路時，讓人民重新選擇最民主。"
+          },
+          {
+            "id": "b",
+            "label": "可以。立法院和總統僵持不下，政府運作就被癱瘓；解散國會、把問題交還給人民，是化解僵局最直接的辦法。"
+          },
+          {
+            "id": "c",
+            "label": "不可以只憑這些理由。解散立法院要符合憲法規定的情形，不是政治上僵持就可以。"
+          }
+        ],
+        "correctOptionIds": [
+          "c"
+        ],
+        "rationale": "憲法增修條文第2條的解散規定與第3條的不信任案規定；政治理由不等於法定條件。"
+      },
+      "explanation": {
+        "short": "答案：不可以只憑這些理由。總統解散立法院，要符合憲法增修條文規定的條件；得票高低、民調支持，都不是增修條文列出的條件。",
+        "mechanism": "憲法增修條文第2條規定，總統是在立法院通過對行政院院長的不信任案後十日內，經諮詢立法院院長後，得宣告解散立法院；戒嚴或緊急命令生效期間，不得解散立法院。本題中立法院並沒有通過不信任案，而「得票比立委高」或「民調支持」都不是增修條文列出的條件。本題只問「單憑政治衝突或民意」夠不夠，不測驗法定天數。",
+        "possibleReasons": "解散與國會對行政的責任機制連動，可以形成制衡。",
+        "alternatives": "其他制度可能採不同的解散設計，須另查各自的法源。",
+        "limitations": "本題只排除「單憑政治衝突」這個理由；不是說總統永遠不得解散，也不測驗法定天數。題目情境是假設，不指向任何真實事件。",
+        "misconception": "「民意最大」聽起來很民主。但如果有民意基礎就不必受條件限制，權力的界線就要看掌權的人怎麼想；換誰上台都可以這樣做。憲法把條件寫清楚，是為了讓每一方都有可預期的規則。"
+      },
+      "epistemic": "settled",
+      "disputeScope": "none",
+      "evidenceIds": [
+        "l05"
+      ],
+      "readingIds": [
+        "l05"
+      ],
+      "discussionPrompts": [
+        "民調和法律授權要怎麼區分？",
+        "如果要改變這個制度，需要修改哪些規範？",
+        "國會本身也有民意基礎，要怎麼和總統的民意基礎比較？"
+      ],
+      "search": {
+        "profileId": "tw-dissolution",
+        "keywords": [
+          "不信任案 解散立法院 憲法增修",
+          "倒閣 解散 制衡",
+          "parliament dissolution constitutional conditions"
+        ],
+        "categories": [
+          "news",
+          "argument",
+          "comparison",
+          "official",
+          "academic"
+        ],
+        "region": "TW",
+        "language": "zh-Hant"
+      },
+      "validity": {
+        "asOf": "2026-10-17",
+        "validFrom": "2026-10-16T16:00:00Z",
+        "validUntil": null,
+        "reviewDueAt": "2026-11-15T16:00:00Z",
+        "knowledgeVersion": "憲法增修條文第2、3條；2026-10-17初查"
+      },
+      "governance": {
+        "lifecycle": "draft",
+        "verification": "unreviewed",
+        "lastReviewedAt": null,
+        "reviewers": [],
+        "notes": "待審：新聞不得省略不信任案、禁止解散期間等條件。"
+      },
+      "extensions": {
+        "civic.basis": [
+          {
+            "sourceId": "l05",
+            "quote": "總統於立法院通過對行政院院長之不信任案後十日內，經諮詢立法院院長後，得宣告解散立法院。但總統於戒嚴或緊急命令生效期間，不得解散立法院。",
+            "locator": "憲法增修條文第2條"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tw-president-report-04",
+      "version": "0.1.0",
+      "authorIds": [
+        "spec-editor"
+      ],
+      "concepts": [
+        "civics.oversight-tools",
+        "civics.accountability"
+      ],
+      "topic": "要求總統到場答詢",
+      "language": "zh-Hant-TW",
+      "jurisdiction": "TW",
+      "context": "立法院每年集會時，可以聽取總統的國情報告。有立法委員說：「總統影響這麼大，我們不只要聽他報告，還要他留下來，一題一題回答我們的質詢。」",
+      "intuition": {
+        "kind": "value",
+        "prompt": "總統影響重大政策，所以國會應能要求總統逐題回答。",
+        "options": [
+          {
+            "id": "v1",
+            "label": "較同意"
+          },
+          {
+            "id": "v2",
+            "label": "較不同意"
+          },
+          {
+            "id": "v3",
+            "label": "尚無主張"
+          }
+        ]
+      },
+      "knowledge": {
+        "type": "single",
+        "prompt": "立法院可以單方面要求總統到場，並且逐題答覆嗎？",
+        "options": [
+          {
+            "id": "a",
+            "label": "可以。國情報告本來就是讓國會了解國家狀況，既然要了解，當然包含提問和要求回答。"
+          },
+          {
+            "id": "b",
+            "label": "不可以。聽取報告和強制答詢是兩回事，不能直接從「聽取報告」推出總統有答詢的義務。"
+          },
+          {
+            "id": "c",
+            "label": "可以。總統掌握重大權力，國會代表人民，要求總統面對面回答，是最基本的監督。"
+          }
+        ],
+        "correctOptionIds": [
+          "b"
+        ],
+        "rationale": "113憲判9主文二及相關理由，合讀憲法增修條文第4條；聽取國情報告不等同強制總統答詢。"
+      },
+      "explanation": {
+        "short": "答案：不可以。依113憲判9，不能直接由「得聽取國情報告」推出可以單方面要求總統到場逐題答覆。報告、質詢、邀請是不同的關係。",
+        "mechanism": "憲法增修條文第4條規定：立法院於每年集會時，得聽取總統國情報告。113年憲判字第9號對這項規定的判斷是：不能直接由「得聽取國情報告」推出可以強制總統答詢。判決的主文與理由才是有效的裁判結論；同案的不同意見書只代表個別意見。",
+        "possibleReasons": "報告與質詢對應不同的政治責任關係，法律上的效果與義務也不同。",
+        "alternatives": "可以討論如何改革政治責任機制，但要區分「個別意見」與「有效裁判結論」。",
+        "limitations": "不能把本題擴大成「總統不受任何監督」。後續裁判、修法及本題引用範圍仍待審查。",
+        "misconception": "「總統權力大，所以國會應該隨時叫他來問」聽起來很合理。想加強對總統的監督，可以討論、可以修法修憲；但如果沒有法源，就把「希望採用的監督方式」直接當成現有權力，各機關的權限界線就會變成誰的聲勢大誰說了算。"
+      },
+      "epistemic": "disputed",
+      "disputeScope": "rationale",
+      "evidenceIds": [
+        "l06",
+        "l05"
+      ],
+      "readingIds": [
+        "l06"
+      ],
+      "discussionPrompts": [
+        "報告和質詢有什麼不同？",
+        "「總統應受監督」和「國會可以強制質詢」，哪一個是改革主張？",
+        "如果你想支持另一種制度，需要哪個法源？"
+      ],
+      "search": {
+        "profileId": "tw-president-report",
+        "keywords": [
+          "113憲判9 國情報告 主文",
+          "總統 國會 政治責任",
+          "presidential accountability parliamentary questions"
+        ],
+        "categories": [
+          "news",
+          "argument",
+          "comparison",
+          "official",
+          "academic"
+        ],
+        "region": "TW",
+        "language": "zh-Hant"
+      },
+      "validity": {
+        "asOf": "2026-10-17",
+        "validFrom": "2026-10-16T16:00:00Z",
+        "validUntil": null,
+        "reviewDueAt": "2026-11-15T16:00:00Z",
+        "knowledgeVersion": "113憲判9及憲法增修條文第4條；2026-10-17初查"
+      },
+      "governance": {
+        "lifecycle": "draft",
+        "verification": "unreviewed",
+        "lastReviewedAt": null,
+        "reviewers": [],
+        "notes": "待審：後續裁判、修法，以及原型的引用範圍。"
+      },
+      "extensions": {
+        "civic.basis": [
+          {
+            "sourceId": "l05",
+            "quote": "立法院於每年集會時，得聽取總統國情報告。",
+            "locator": "憲法增修條文第4條"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tw-conflicting-duties-09",
+      "version": "0.1.0",
+      "authorIds": [
+        "spec-editor"
+      ],
+      "concepts": [
+        "civics.discretion",
+        "civics.knowledge-limits"
+      ],
+      "topic": "兩項義務互相衝突",
+      "language": "zh-Hant-TW",
+      "jurisdiction": "TW",
+      "context": "有人說：「政府同時有兩項法律義務，沒辦法同時做到，所以政府可以自己選比較重要的那一項。」但你還不知道這兩項規定的內容、哪一項位階比較高、適用在誰身上，也不知道有沒有救濟管道。（這是抽象的假設，不指向任何真實事件。）",
+      "intuition": {
+        "kind": "value",
+        "prompt": "政府遇到兩項無法同時履行的法律義務時，應能自行選擇較重要的一項。",
+        "options": [
+          {
+            "id": "v1",
+            "label": "較同意"
+          },
+          {
+            "id": "v2",
+            "label": "較不同意"
+          },
+          {
+            "id": "v3",
+            "label": "尚無主張"
+          }
+        ]
+      },
+      "knowledge": {
+        "type": "reflection",
+        "prompt": "只知道這些，你覺得下面哪一個說法最合理？",
+        "options": [
+          {
+            "id": "a",
+            "label": "政府比較了解實際情況，應該可以自己挑比較重要的那一項。"
+          },
+          {
+            "id": "b",
+            "label": "應該照「位階比較高」或「比較新」的那一項辦，查出哪一項位階高就能決定。"
+          },
+          {
+            "id": "c",
+            "label": "兩項都盡力去做，做不到的部分，由政府對外說明理由就好。"
+          },
+          {
+            "id": "d",
+            "label": "在查清楚兩項規定的內容、位階和適用對象之前，還不能判斷政府能不能選。"
+          }
+        ],
+        "correctOptionIds": [],
+        "rationale": "這題沒有標準答案、不計分。檢核提示：是哪兩個規定？真的同時適用嗎？是否有優先或例外規定？哪個機關能解釋或裁判？所謂的裁量有沒有授權與界限？"
+      },
+      "explanation": {
+        "short": "這題沒有標準答案。光知道「兩項義務衝突」，還不能判斷政府的作法合不合法。前面每一種想法都有它合理的地方，也都藏著沒有說出口的前提，要補齊資訊才能分析。",
+        "mechanism": "行政程序法第4條、第10條提供「依法行政」與「裁量界限」的閱讀起點，但不足以解決所有憲法機關之間的爭議。",
+        "possibleReasons": "規範衝突可能來自位階不同、適用對象不同，或其實並非同時適用。",
+        "alternatives": "補齊具體法條後，才有可能把這題拆成可評分的題目；在那之前維持反思型。",
+        "limitations": "若日後引入真實事件，必須另立版本、爭點及法源，不沿用本題當作背書。",
+        "misconception": "「政府很難做，所以可以自己選」聽起來很體諒。但如果遇到衝突就能自己挑，政府就能隨時拿「兩難」當理由，不遵守它不想遵守的規定；反過來說「有衝突就一定違法」也一樣草率。"
+      },
+      "epistemic": "uncertain",
+      "disputeScope": "answer",
+      "evidenceIds": [
+        "l11"
+      ],
+      "readingIds": [
+        "l11"
+      ],
+      "discussionPrompts": [
+        "哪些事實會改變你的結論？",
+        "「解釋衝突」和「違反義務」差在哪裡？",
+        "誰應該提出理由來支持裁量？"
+      ],
+      "search": {
+        "profileId": "tw-conflicting-duties",
+        "keywords": [
+          "依法行政 裁量 授權",
+          "法律義務衝突 規範競合",
+          "conflicting legal duties discretion"
+        ],
+        "categories": [
+          "news",
+          "argument",
+          "comparison",
+          "official",
+          "academic"
+        ],
+        "region": "TW",
+        "language": "zh-Hant"
+      },
+      "validity": {
+        "asOf": "2026-10-17",
+        "validFrom": "2026-10-16T16:00:00Z",
+        "validUntil": null,
+        "reviewDueAt": "2026-11-15T16:00:00Z",
+        "knowledgeVersion": "行政程序法第4、10條；2026-10-17初查，僅作閱讀起點"
+      },
+      "governance": {
+        "lifecycle": "draft",
+        "verification": "unreviewed",
+        "lastReviewedAt": null,
+        "reviewers": [],
+        "notes": "反思題：無標準正解、不計分。若日後引入真實事件，必須另立版本、爭點及法源。"
+      },
+      "extensions": {
+        "civic.basis": [
+          {
+            "sourceId": "l11",
+            "quote": "行政行為應受法律及一般法律原則之拘束。",
+            "locator": "行政程序法第4條"
+          },
+          {
+            "sourceId": "l11",
+            "quote": "行政機關行使裁量權，不得逾越法定之裁量範圍，並應符合法規授權之目的。",
+            "locator": "行政程序法第10條"
+          }
+        ],
+        "civic.option-notes": {
+          "a": "這個想法假設政府比較了解情況，而且有選擇的空間。但政府有沒有裁量空間，要看法律有沒有授權、有沒有界限。",
+          "b": "這個想法假設衝突一定能靠「位階高低、新舊」解決。但兩項規定可能位階相同、適用對象不同，甚至其實並不衝突。",
+          "c": "這個想法假設兩項義務都能做一部分。但有些義務不能只做一半，而且「說明理由」不等於合法。",
+          "d": "這個想法先把事實查清楚：是哪兩個規定？真的同時適用嗎？有沒有優先或例外的規定？誰有權解釋？它最接近分析的起點，但還不是結論。"
+        }
+      }
+    },
+    {
+      "id": "tw-emergency-10",
+      "version": "0.1.0",
+      "authorIds": [
+        "spec-editor"
+      ],
+      "concepts": [
+        "civics.emergency-powers",
+        "civics.checks-and-balances"
+      ],
+      "topic": "重大災難與緊急命令",
+      "language": "zh-Hant-TW",
+      "jurisdiction": "TW",
+      "context": "一場強烈地震造成多處災情，需要立刻下令徵用物資、限制部分地區出入。總統說：「現在沒時間慢慢討論，我簽了就算數，其他機關不要拖延。」（這題不考慮立法院已經解散的特殊情形。）",
+      "intuition": {
+        "kind": "value",
+        "prompt": "危機時總統應能自行決定緊急措施，避免其他機關拖延。",
+        "options": [
+          {
+            "id": "v1",
+            "label": "較同意"
+          },
+          {
+            "id": "v2",
+            "label": "較不同意"
+          },
+          {
+            "id": "v3",
+            "label": "尚無主張"
+          }
+        ]
+      },
+      "knowledge": {
+        "type": "single",
+        "prompt": "你覺得，這個緊急處置應該怎麼做才合理？",
+        "options": [
+          {
+            "id": "a",
+            "label": "總統情況最清楚，應該立刻自己決定、馬上執行；事後再向國會報告，才不會耽誤救災。"
+          },
+          {
+            "id": "b",
+            "label": "應該先經過行政院、立法院等機關充分討論、都同意之後才能動；緊急的時候更要小心，才不會出錯。"
+          },
+          {
+            "id": "c",
+            "label": "由行政院會議討論決定、馬上執行；事後再交給立法院確認，立法院不同意，命令就立即失效。"
+          }
+        ],
+        "correctOptionIds": [
+          "c"
+        ],
+        "rationale": "憲法增修條文第2條的緊急命令規定。"
+      },
+      "explanation": {
+        "short": "答案：要先經行政院會議決議才能發布，發布後還要提交立法院追認。就算是緊急狀況，也有制度上的參與和事後檢查。",
+        "mechanism": "憲法增修條文第2條規定：緊急命令要先經行政院會議決議才能發布，發布後十日內要提交立法院追認；立法院不同意時，緊急命令立即失效。本題只問程序，不判斷某次事件是否符合發布要件。",
+        "possibleReasons": "事前決議與事後追認，兼顧速度與問責。",
+        "alternatives": "不同國家有不同的緊急權機制，可以比較，但須查各國的原始規範。",
+        "limitations": "本題不判斷某次事件是否符合發布要件，也不把一般災害處置都稱為緊急命令。若加入歷史事件，須另查當時的版本，不能拿現行條文直接套歷史。",
+        "misconception": "「危機要快，所以一個人決定最有效率」聽起來合理。但如果一遇到危機，分工和檢查就消失，只要有人宣布「危機」，權力就可以不受限制；事前決議與事後追認，就是讓快速行動之後，還能被檢查。"
+      },
+      "epistemic": "settled",
+      "disputeScope": "none",
+      "evidenceIds": [
+        "l05"
+      ],
+      "readingIds": [
+        "l05"
+      ],
+      "discussionPrompts": [
+        "事前決議和事後追認，各自解決什麼問題？",
+        "如果國會不同意，會怎麼樣？",
+        "一般行政措施和緊急命令，要怎麼區分？"
+      ],
+      "search": {
+        "profileId": "tw-emergency",
+        "keywords": [
+          "緊急命令 行政院會議 立法院追認",
+          "緊急權 憲政 制衡",
+          "emergency powers parliamentary approval"
+        ],
+        "categories": [
+          "news",
+          "argument",
+          "comparison",
+          "official",
+          "academic"
+        ],
+        "region": "TW",
+        "language": "zh-Hant"
+      },
+      "validity": {
+        "asOf": "2026-10-17",
+        "validFrom": "2026-10-16T16:00:00Z",
+        "validUntil": null,
+        "reviewDueAt": "2026-11-15T16:00:00Z",
+        "knowledgeVersion": "憲法增修條文第2條；2026-10-17初查"
+      },
+      "governance": {
+        "lifecycle": "draft",
+        "verification": "unreviewed",
+        "lastReviewedAt": null,
+        "reviewers": [],
+        "notes": "待審：如加入歷史事件，另查當時版本，不能拿現行條文直接套歷史。"
+      },
+      "extensions": {
+        "civic.basis": [
+          {
+            "sourceId": "l05",
+            "quote": "總統為避免國家或人民遭遇緊急危難或應付財政經濟上重大變故，得經行政院會議之決議發布緊急命令，為必要之處置，不受憲法第四十三條之限制。但須於發布命令後十日內提交立法院追認，如立法院不同意時，該緊急命令立即失效。",
+            "locator": "憲法增修條文第2條"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tw-executive-responsibility-11",
+      "version": "0.1.0",
+      "authorIds": [
+        "spec-editor"
+      ],
+      "concepts": [
+        "civics.executive-accountability",
+        "civics.direct-election"
+      ],
+      "topic": "施政報告與質詢",
+      "language": "zh-Hant-TW",
+      "jurisdiction": "TW",
+      "context": "有人說：「總統是全民直選的，所以政府的施政報告和國會質詢，都應該直接找總統，行政院長只是配合的。」這題問的是：依憲法的制度設計，一般的施政報告和質詢是怎麼安排的。",
+      "intuition": {
+        "kind": "value",
+        "prompt": "總統是直接民選的，所以所有施政報告與國會質詢都應直接找總統。",
+        "options": [
+          {
+            "id": "v1",
+            "label": "較同意"
+          },
+          {
+            "id": "v2",
+            "label": "較不同意"
+          },
+          {
+            "id": "v3",
+            "label": "尚無主張"
+          }
+        ]
+      },
+      "knowledge": {
+        "type": "single",
+        "prompt": "依憲法的規定，施政報告和質詢應該怎麼安排？",
+        "options": [
+          {
+            "id": "a",
+            "label": "全部找總統。總統是全民直選的最高首長，政策最後由他決定，責任當然在他身上。"
+          },
+          {
+            "id": "b",
+            "label": "由行政院向立法院報告施政方針；立法委員開會時，向行政院長和各部會首長質詢。"
+          },
+          {
+            "id": "c",
+            "label": "兩邊都要：總統和行政院長都是重要首長，應該各自報告、各自接受立法院質詢。"
+          }
+        ],
+        "correctOptionIds": [
+          "b"
+        ],
+        "rationale": "憲法增修條文第3條與憲法第53條（行政院為最高行政機關）；不將憲法本文已停止適用的舊責任安排當作現行規則。"
+      },
+      "explanation": {
+        "short": "答案：行政院有向立法院提出施政方針與報告的責任，立法委員可以向行政院長和各部會首長質詢。民意從哪裡來，和誰要負哪一種責任，是兩件事。",
+        "mechanism": "憲法增修條文第3條規定行政院的施政責任與質詢關係；憲法第53條定位行政院為最高行政機關。本題不是說總統對政策沒有影響力：政治上的影響力，和法律上的責任，要分開來看。",
+        "possibleReasons": "把「報告與答詢」分配給對應的機關，才能追究具體的政策責任。",
+        "alternatives": "雙首長制如何運作，以及總統實際的政治影響力，是另一個分析層次。",
+        "limitations": "本題不聲稱總統對政策沒有影響。本題與題4可用不同情境作轉移，不宣稱測到完全獨立的構念。",
+        "misconception": "「最高民選，所以什麼都該問他」聽起來合理。但如果責任都集中在一個人身上、其他機關不用負責，出問題時就不知道該找誰；制度把報告與答詢分配給不同的機關，是為了讓每件事都有人負責、查得到。"
+      },
+      "epistemic": "settled",
+      "disputeScope": "none",
+      "evidenceIds": [
+        "l05",
+        "l12"
+      ],
+      "readingIds": [
+        "l06"
+      ],
+      "discussionPrompts": [
+        "政治影響力和法律權限要怎麼區分？",
+        "誰應該提供施政的理由？",
+        "新聞常說的「總統決策」，還需要補充哪些制度資訊？"
+      ],
+      "search": {
+        "profileId": "tw-executive-responsibility",
+        "keywords": [
+          "行政院 對立法院負責 質詢",
+          "雙首長制 政治責任",
+          "semi presidential executive accountability"
+        ],
+        "categories": [
+          "news",
+          "argument",
+          "comparison",
+          "official",
+          "academic"
+        ],
+        "region": "TW",
+        "language": "zh-Hant"
+      },
+      "validity": {
+        "asOf": "2026-10-17",
+        "validFrom": "2026-10-16T16:00:00Z",
+        "validUntil": null,
+        "reviewDueAt": "2026-11-15T16:00:00Z",
+        "knowledgeVersion": "憲法增修條文第3條、憲法第53條；2026-10-17初查"
+      },
+      "governance": {
+        "lifecycle": "draft",
+        "verification": "unreviewed",
+        "lastReviewedAt": null,
+        "reviewers": [],
+        "notes": "待審：與題4概念相近，可用不同情境作轉移。"
+      },
+      "extensions": {
+        "civic.basis": [
+          {
+            "sourceId": "l05",
+            "quote": "行政院有向立法院提出施政方針及施政報告之責。立法委員在開會時，有向行政院院長及行政院各部會首長質詢之權。",
+            "locator": "憲法增修條文第3條"
+          },
+          {
+            "sourceId": "l12",
+            "quote": "行政院為國家最高行政機關。",
+            "locator": "憲法第53條"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tw-advertising-12",
+      "version": "0.1.0",
+      "authorIds": [
+        "spec-editor"
+      ],
+      "concepts": [
+        "civics.proportionality",
+        "civics.means-and-ends"
+      ],
+      "topic": "移民業務廣告的事前審查",
+      "language": "zh-Hant-TW",
+      "jurisdiction": "TW",
+      "context": "為了避免民眾被不實的移民業務廣告欺騙，法律規定這類廣告必須先經政府審查同意，才能刊登。有人認為這項規定違憲，憲法法庭審理後作出判決（2026-10-08）。",
+      "intuition": {
+        "kind": "value",
+        "prompt": "為避免人民受騙，政府應能要求移民業務廣告先取得審閱確認，才能刊登。",
+        "options": [
+          {
+            "id": "v1",
+            "label": "較同意"
+          },
+          {
+            "id": "v2",
+            "label": "較不同意"
+          },
+          {
+            "id": "v3",
+            "label": "尚無主張"
+          }
+        ]
+      },
+      "knowledge": {
+        "type": "single",
+        "prompt": "你覺得憲法法庭怎麼判？",
+        "options": [
+          {
+            "id": "a",
+            "label": "合憲。保護民眾不被騙是正當的目的，廣告一旦刊登傷害就發生了，事前審查是最有效的辦法。"
+          },
+          {
+            "id": "b",
+            "label": "違憲。保護民眾的目的正當，但事前審查限制太多；不實廣告仍然可以用其他方式處罰。"
+          },
+          {
+            "id": "c",
+            "label": "違憲。廣告也是言論自由，政府只要碰廣告內容就是侵害，連事後處罰都不應該。"
+          }
+        ],
+        "correctOptionIds": [
+          "b"
+        ],
+        "rationale": "115憲判7主文一與憲法第23條。"
+      },
+      "explanation": {
+        "short": "答案：好的目的，不會讓所有手段自動合憲。115憲判7判決移民業務廣告的事前審查規定違憲、失效；但這不表示欺騙消費者的廣告可以不受任何規範。",
+        "mechanism": "依據115年憲判字第7號主文一與憲法第23條。判決對所審規定的失效時點有明確表示。要持續查判決之後的法規整編與新措施；舊新聞可能還在描述判決前的規則。",
+        "possibleReasons": "判決否定的是這個特定手段（事前審查），而不是保護消費者的目的。",
+        "alternatives": "可以討論侵害較小的措施；不能把本判決直接套到所有廣告類型。",
+        "limitations": "要持續查判決之後的法規整編及新措施，不能以舊條文頁尚未更新，就否定裁判的效果。舊新聞可能仍在描述判決前的規則。",
+        "misconception": "「目的是為了保護大家，所以手段不用檢查」聽起來很善意。但如果只看目的，政府就能用任何「為你好」的名義限制言論，而且不必證明有沒有更小的手段；法院檢查的是手段，不是否定目的。"
+      },
+      "epistemic": "settled",
+      "disputeScope": "none",
+      "evidenceIds": [
+        "l13",
+        "l04"
+      ],
+      "readingIds": [
+        "l13",
+        "l14"
+      ],
+      "discussionPrompts": [
+        "判決否定的是目的，還是手段？",
+        "是否還有其他侵害較小的管制方式？",
+        "舊新聞是否仍在描述判決之前的規則？"
+      ],
+      "search": {
+        "profileId": "tw-advertising",
+        "keywords": [
+          "115憲判7 移民業務廣告",
+          "商業言論 事前審查 比例原則",
+          "commercial speech prior restraint immigration advertising"
+        ],
+        "categories": [
+          "news",
+          "argument",
+          "comparison",
+          "official",
+          "academic"
+        ],
+        "region": "TW",
+        "language": "zh-Hant"
+      },
+      "validity": {
+        "asOf": "2026-10-17",
+        "validFrom": "2026-10-16T16:00:00Z",
+        "validUntil": null,
+        "reviewDueAt": "2026-11-15T16:00:00Z",
+        "knowledgeVersion": "115憲判7及憲法第23條；2026-10-17初查，新近判決須優先安排短期覆核"
+      },
+      "governance": {
+        "lifecycle": "draft",
+        "verification": "unreviewed",
+        "lastReviewedAt": null,
+        "reviewers": [],
+        "notes": "待審：持續查判決之後的法規整編及新措施；新近判決題須優先安排短期覆核。"
+      },
+      "extensions": {
+        "civic.basis": [
+          {
+            "sourceId": "l04",
+            "quote": "以上各條列舉之自由權利，除為防止妨礙他人自由、避免緊急危難、維持社會秩序，或增進公共利益所必要者外，不得以法律限制之。",
+            "locator": "憲法第23條"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tw-reconsideration-13",
+      "version": "0.1.0",
+      "authorIds": [
+        "spec-editor"
+      ],
+      "language": "zh-Hant-TW",
+      "jurisdiction": "TW",
+      "intuition": {
+        "kind": "value",
+        "prompt": "行政部門最清楚做不做得到，所以它說做不到，法律就不該硬要它執行。",
+        "options": [
+          {
+            "id": "v1",
+            "label": "較同意"
+          },
+          {
+            "id": "v2",
+            "label": "較不同意"
+          },
+          {
+            "id": "v3",
+            "label": "尚無主張"
+          }
+        ]
+      },
+      "readingIds": [
+        "l05"
+      ],
+      "discussionPrompts": [
+        "行政部門表達困難的機會，和擁有最後的否決權，有什麼不同？",
+        "如果行政院有最後的否決權，立法院通過的法律還有多少份量？",
+        "其他國家的總統否決權，和這個設計有什麼不同？"
+      ],
+      "search": {
+        "profileId": "tw-reconsideration",
+        "keywords": [
+          "覆議 窒礙難行 增修條文",
+          "legislative veto reconsideration premier"
+        ],
+        "categories": [
+          "news",
+          "argument",
+          "comparison",
+          "official",
+          "academic"
+        ],
+        "region": "TW",
+        "language": "zh-Hant"
+      },
+      "validity": {
+        "asOf": "2026-10-18",
+        "validFrom": "2026-10-17T16:00:00Z",
+        "validUntil": null,
+        "reviewDueAt": "2026-11-16T16:00:00Z",
+        "knowledgeVersion": "憲法增修條文第3條；2026-10-18 查閱官方條文"
+      },
+      "governance": {
+        "lifecycle": "draft",
+        "verification": "unreviewed",
+        "lastReviewedAt": null,
+        "reviewers": [],
+        "notes": "待審：條文引用範圍；不討論行政命令與條約的特殊程序。"
+      },
+      "concepts": [
+        "civics.separation",
+        "civics.checks-and-balances"
+      ],
+      "topic": "行政院做不到的法律",
+      "context": "立法院通過了一項法律案。行政院仔細評估後，認為這項法律內容有嚴重的窒礙，實在很難執行，想要把它擋下來。",
+      "knowledge": {
+        "type": "single",
+        "prompt": "依憲法的制度設計，行政院可以怎麼做？",
+        "options": [
+          {
+            "id": "a",
+            "label": "總統可以直接否決這個法律案，不讓它成為法律，因為總統要對整體國家運作負責。"
+          },
+          {
+            "id": "b",
+            "label": "行政院可以拒絕執行，因為行政部門最清楚做不做得到，不能強迫它做不可能的事。"
+          },
+          {
+            "id": "c",
+            "label": "經總統核可，行政院可以移請立法院重新審議；如果立法院過半數維持原案，行政院就必須接受。"
+          },
+          {
+            "id": "d",
+            "label": "行政院只能照辦，如果有意見，要等到下一次選舉讓人民決定要不要換掉立法院。"
+          }
+        ],
+        "correctOptionIds": [
+          "c"
+        ],
+        "rationale": "憲法增修條文第3條：覆議制度。"
+      },
+      "explanation": {
+        "short": "答案：行政院經總統核可，可以移請立法院覆議；立法院全體過半數維持原案時，行政院長應即接受。就算認為窒礙難行，行政院也沒有最後的否決權。",
+        "mechanism": "憲法增修條文第3條規定：行政院對於立法院決議的法律案、預算案、條約案，如果認為有窒礙難行，得經總統之核可，在決議案送達十日內移請立法院覆議。覆議時，如果全體立法委員二分之一以上決議維持原案，行政院院長應即接受該決議；覆議案逾期未議決，原決議失效。",
+        "possibleReasons": "這個設計讓行政部門有一次把困難說清楚的機會，但最後仍由代表人民的立法院決定，避免行政部門用「做不到」擋下法律。這是常見的解釋，並非條文本身的說明。",
+        "alternatives": "有些國家（例如美國）的總統有否決權，立法部門要用更高的門檻才能推翻；台灣的設計不同。各國制度要另查各自的法規。",
+        "limitations": "本題只談法律案、預算案、條約案的覆議，不討論行政命令，也不判斷某一部法律是不是真的窒礙難行。",
+        "misconception": "「行政部門最了解能不能做，所以它說了算」聽起來很合理。但如果行政部門能用「做不到」擋下法律，民意機關通過的法律就可能被架空，人民選出立法院的意義也會打折；覆議制度讓困難被聽見，卻不讓任何一方有最後的否決權。"
+      },
+      "epistemic": "settled",
+      "disputeScope": "none",
+      "evidenceIds": [
+        "l05"
+      ],
+      "extensions": {
+        "civic.basis": [
+          {
+            "sourceId": "l05",
+            "locator": "憲法增修條文第3條",
+            "quote": "行政院對於立法院決議之法律案、預算案、條約案，如認為有窒礙難行時，得經總統之核可，於該決議案送達行政院十日內，移請立法院覆議。"
+          },
+          {
+            "sourceId": "l05",
+            "locator": "憲法增修條文第3條",
+            "quote": "覆議時，如經全體立法委員二分之一以上決議維持原案，行政院院長應即接受該決議。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tw-judicial-budget-14",
+      "version": "0.1.0",
+      "authorIds": [
+        "spec-editor"
+      ],
+      "language": "zh-Hant-TW",
+      "jurisdiction": "TW",
+      "intuition": {
+        "kind": "value",
+        "prompt": "預算都由行政院統籌編列，沒有哪個機關可以例外。",
+        "options": [
+          {
+            "id": "v1",
+            "label": "較同意"
+          },
+          {
+            "id": "v2",
+            "label": "較不同意"
+          },
+          {
+            "id": "v3",
+            "label": "尚無主張"
+          }
+        ]
+      },
+      "readingIds": [
+        "l05"
+      ],
+      "discussionPrompts": [
+        "審理案件的機關，預算卻由可能成為被告的機關決定，會有什麼問題？",
+        "預算上的保護，和判決的獨立有什麼關係？",
+        "立法院審議時，可以怎麼處理司法院的概算？"
+      ],
+      "search": {
+        "profileId": "tw-judicial-budget",
+        "keywords": [
+          "司法概算 行政院 不得刪減",
+          "judicial budget independence"
+        ],
+        "categories": [
+          "news",
+          "argument",
+          "comparison",
+          "official",
+          "academic"
+        ],
+        "region": "TW",
+        "language": "zh-Hant"
+      },
+      "validity": {
+        "asOf": "2026-10-18",
+        "validFrom": "2026-10-17T16:00:00Z",
+        "validUntil": null,
+        "reviewDueAt": "2026-11-16T16:00:00Z",
+        "knowledgeVersion": "憲法增修條文第5條；2026-10-18 查閱官方條文"
+      },
+      "governance": {
+        "lifecycle": "draft",
+        "verification": "unreviewed",
+        "lastReviewedAt": null,
+        "reviewers": [],
+        "notes": "待審：不討論立法院審議階段的增減；不討論各機關預算的實際編列。"
+      },
+      "concepts": [
+        "civics.judicial-independence",
+        "civics.budget"
+      ],
+      "topic": "司法院的預算",
+      "context": "行政院正在編列明年度的中央政府總預算案。司法院提出的年度預算比去年高出不少，行政院的財政主管人員認為整體預算吃緊，想把司法院的部分項目刪減。",
+      "knowledge": {
+        "type": "single",
+        "prompt": "行政院可以刪減司法院提出的年度預算嗎？",
+        "options": [
+          {
+            "id": "a",
+            "label": "可以。總預算由行政院統籌編列，各機關的需求都要經過行政院整體衡量。"
+          },
+          {
+            "id": "b",
+            "label": "不可以刪減，但行政院可以加註意見，把司法院的概算編入總預算案，再送立法院審議。"
+          },
+          {
+            "id": "c",
+            "label": "可以，但只能刪減和審判業務沒有直接關係的項目，審判業務的預算才不能動。"
+          },
+          {
+            "id": "d",
+            "label": "不可以。司法院的預算由立法院直接審議，不併入行政院編列的總預算案。"
+          }
+        ],
+        "correctOptionIds": [
+          "b"
+        ],
+        "rationale": "憲法增修條文第5條：司法概算。"
+      },
+      "explanation": {
+        "short": "答案：行政院不能刪減司法院提出的年度司法概算，只能加註意見，編入中央政府總預算案，送立法院審議。預算雖然由行政院統籌，司法院的概算是明文的例外。",
+        "mechanism": "憲法增修條文第5條規定：司法院所提出之年度司法概算，行政院不得刪減，但得加註意見，編入中央政府總預算案，送立法院審議。",
+        "possibleReasons": "預算是行政機關最有力的工具之一。如果行政院能隨意刪減司法預算，審理案件（包括涉及行政機關的案件）的機關，就得看可能被審的對象的臉色。這是常見的解釋，並非條文本身的說明。",
+        "alternatives": "各國對司法預算的安排不同：有的由議會直接決定，有的由司法機關自己編列。要另查各國的規定。",
+        "limitations": "本題只談行政院能不能刪減；立法院審議時如何增減，是另一個問題。也不討論各機關預算的實際編列。",
+        "misconception": "「預算都歸行政院統籌，所以每個機關都一樣」聽起來很合理。但如果審判機關的預算可以被行政機關任意刪減，行政部門就有了一種不必經過審判、卻能影響審判機關的辦法；這個例外，就是讓司法不必看行政的臉色。"
+      },
+      "epistemic": "settled",
+      "disputeScope": "none",
+      "evidenceIds": [
+        "l05"
+      ],
+      "extensions": {
+        "civic.basis": [
+          {
+            "sourceId": "l05",
+            "locator": "憲法增修條文第5條",
+            "quote": "司法院所提出之年度司法概算，行政院不得刪減，但得加註意見，編入中央政府總預算案，送立法院審議。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tw-civil-disobedience-15",
+      "version": "0.1.0",
+      "authorIds": [
+        "spec-editor"
+      ],
+      "language": "zh-Hant-TW",
+      "jurisdiction": "TW",
+      "intuition": {
+        "kind": "value",
+        "prompt": "為了正當的目的，和平的違法抗議在民主社會也是可以被接受的。",
+        "options": [
+          {
+            "id": "v1",
+            "label": "較同意"
+          },
+          {
+            "id": "v2",
+            "label": "較不同意"
+          },
+          {
+            "id": "v3",
+            "label": "尚無主張"
+          }
+        ]
+      },
+      "readingIds": [
+        "l15",
+        "l04"
+      ],
+      "discussionPrompts": [
+        "誰有資格判斷一個訴求「夠正當」？",
+        "如果每個人都能用「我的目的比較正當」違反規則，會發生什麼事？",
+        "如果合法管道真的都走不通，人們還能怎麼辦？"
+      ],
+      "search": {
+        "profileId": "tw-civil-disobedience",
+        "keywords": [
+          "公民不服從 民主 集會自由",
+          "civil disobedience democracy"
+        ],
+        "categories": [
+          "news",
+          "argument",
+          "comparison",
+          "official",
+          "academic"
+        ],
+        "region": "TW",
+        "language": "zh-Hant"
+      },
+      "validity": {
+        "asOf": "2026-10-18",
+        "validFrom": "2026-10-17T16:00:00Z",
+        "validUntil": null,
+        "reviewDueAt": "2026-11-16T16:00:00Z",
+        "knowledgeVersion": "憲法第14條、第23條；2026-10-18 查閱官方條文"
+      },
+      "governance": {
+        "lifecycle": "draft",
+        "verification": "unreviewed",
+        "lastReviewedAt": null,
+        "reviewers": [],
+        "notes": "沒有標準答案的題：每個選項都是真實的看法。待審：解釋文字要避免暗示該支持哪一種想法。"
+      },
+      "concepts": [
+        "civics.legitimacy",
+        "civics.rule-of-law"
+      ],
+      "topic": "違法的抗議",
+      "context": "政府通過一項爭議很大的政策，許多人認為嚴重不公。一群民眾在合法的遊行之後，決定不離開，占用馬路和政府機關的出入口，造成交通與公務中斷。他們說這是為了喚起社會的注意；也有人說，這已經違法，民主社會不能容忍。（這是假設情境，不指向任何真實事件，也不涉及暴力。）",
+      "knowledge": {
+        "type": "reflection",
+        "prompt": "只知道這些，你覺得下面哪一個說法最合理？",
+        "options": [
+          {
+            "id": "a",
+            "label": "民主社會必須守法。不滿就用選舉、訴願、訴訟或修法來表達，違法就不該被接受。"
+          },
+          {
+            "id": "b",
+            "label": "只要訴求正當、手段和平，違法的抗議也可以接受，因為有些不公不會被合法管道聽見。"
+          },
+          {
+            "id": "c",
+            "label": "可以違法，但必須公開進行，並且願意接受法律的處罰，這樣才算有擔當的抗議。"
+          },
+          {
+            "id": "d",
+            "label": "要看政策有多嚴重、其他管道是不是真的走不通，以及抗議造成的傷害有多大，不能一概而論。"
+          }
+        ],
+        "correctOptionIds": [],
+        "rationale": "這題沒有標準答案。民主社會裡，守法與抗議的界線，連專家也有不同的看法。"
+      },
+      "explanation": {
+        "short": "這題沒有標準答案。民主社會裡，守法與抗議的界線，連專家也有不同的看法。上面每一種想法都有它合理的地方，也都藏著沒說出口的前提。",
+        "mechanism": "憲法第14條：人民有集會及結社之自由。憲法第23條說明：自由權利除為防止妨礙他人自由、避免緊急危難、維持社會秩序，或增進公共利益所必要者外，不得以法律限制之。法律怎麼劃定集會自由的界線、哪些行為會被處罰，是另一個層次的問題，本題不判斷。",
+        "possibleReasons": "主張嚴格守法的人，重視規則的可預期與公平；主張可以有例外的人，重視法律本身可能不公，以及少數人被聽見的機會。兩邊的出發點都是想保護民主。",
+        "alternatives": "有些人主張，違法抗議要符合條件，例如公開、非暴力、願意承擔責任；這些條件本身也有爭論。",
+        "limitations": "本題不判斷任何真實的抗議是否合法，也不涉及暴力。每個人的選擇，不能用來推論他的政治立場。",
+        "misconception": "「守法就是民主」或「目的正當就可以違法」聽起來都很有道理。但前者可能讓不公平的法律永遠無法被挑戰，後者則讓每個人都能用「我的目的比較正當」來違反規則；這兩種直覺，都需要回答：誰來判斷、用什麼標準？"
+      },
+      "epistemic": "disputed",
+      "disputeScope": "answer",
+      "evidenceIds": [
+        "l15",
+        "l04"
+      ],
+      "extensions": {
+        "civic.basis": [
+          {
+            "sourceId": "l15",
+            "locator": "憲法第14條",
+            "quote": "人民有集會及結社之自由。"
+          },
+          {
+            "sourceId": "l04",
+            "locator": "憲法第23條",
+            "quote": "以上各條列舉之自由權利，除為防止妨礙他人自由、避免緊急危難、維持社會秩序，或增進公共利益所必要者外，不得以法律限制之。"
+          }
+        ],
+        "civic.option-notes": {
+          "a": "這個想法假設合法管道都暢通有效，而且法律本身是正當的。但歷史上有些爭取權利的行動，在當時是違法的。",
+          "b": "這個想法假設「訴求正當」可以被客觀判斷。但不同的人對「正當」的看法不同，如果每個人都能這樣主張，社會的規則就很難維持。",
+          "c": "這個想法假設願意受罰就能彌補違法的代價。但受罰的意願，並不能讓被占用的道路、被中斷的公務恢復；它也假設法律的制裁本身是公平的。",
+          "d": "這個想法假設我們可以公平地衡量嚴重性、替代管道與傷害。但誰來衡量、用什麼標準，本身就有爭議。"
+        }
+      }
+    },
+    {
+      "id": "tw-referendum-vs-court-16",
+      "version": "0.1.0",
+      "authorIds": [
+        "spec-editor"
+      ],
+      "language": "zh-Hant-TW",
+      "jurisdiction": "TW",
+      "intuition": {
+        "kind": "value",
+        "prompt": "全民投票做出的決定，應該比少數法官的解釋更有份量。",
+        "options": [
+          {
+            "id": "v1",
+            "label": "較同意"
+          },
+          {
+            "id": "v2",
+            "label": "較不同意"
+          },
+          {
+            "id": "v3",
+            "label": "尚無主張"
+          }
+        ]
+      },
+      "readingIds": [
+        "l16",
+        "l17",
+        "l18",
+        "l19",
+        "l20",
+        "l21"
+      ],
+      "discussionPrompts": [
+        "如果多數人的決定和憲法的保障衝突，你希望由誰來做最後的判斷？為什麼？",
+        "「修憲」和「公民投票」有什麼不同？為什麼門檻差這麼多？",
+        "少數人的權利，在什麼情況下會需要憲法特別保護？"
+      ],
+      "search": {
+        "profileId": "tw-referendum-court",
+        "keywords": [
+          "公民投票 憲法解釋 效力",
+          "referendum constitutional court conflict"
+        ],
+        "categories": [
+          "news",
+          "argument",
+          "comparison",
+          "official",
+          "academic"
+        ],
+        "region": "TW",
+        "language": "zh-Hant"
+      },
+      "validity": {
+        "asOf": "2026-10-18",
+        "validFrom": "2026-10-17T16:00:00Z",
+        "validUntil": null,
+        "reviewDueAt": "2026-11-16T16:00:00Z",
+        "knowledgeVersion": "公民投票法第30條、憲法第78條、增修條文第12條、釋字第748號；2026-10-18 查閱官方條文"
+      },
+      "governance": {
+        "lifecycle": "draft",
+        "verification": "unreviewed",
+        "lastReviewedAt": null,
+        "reviewers": [],
+        "notes": "沒有標準答案的題：每個選項都是真實的看法。待審：兩邊論點要由不同立場的審查者各看一次；不評論任何真實公投的結果。"
+      },
+      "concepts": [
+        "civics.legitimacy",
+        "civics.rule-of-law",
+        "civics.checks-and-balances"
+      ],
+      "topic": "全民投票與憲法解釋",
+      "context": "一個社會高度爭議的議題，憲法法庭曾作出解釋，認為現行法律缺少一項應有的保障，違反憲法，要求立法機關在期限內修法。之後這個議題舉行了公民投票，結果有效同意票多於不同意票，並且達到法定門檻：多數人投票支持維持原來的法律規定。（這是假設情境，題目沒有說明議題是什麼，也不評論這個議題本身。）",
+      "knowledge": {
+        "type": "reflection",
+        "prompt": "只知道這些，你覺得下面哪一個說法最合理？",
+        "options": [
+          {
+            "id": "a",
+            "label": "人民才是主權者。投票是最新、最直接的民意，不能被少數人的解釋推翻。"
+          },
+          {
+            "id": "b",
+            "label": "憲法保障的權利，不能交給多數決來決定，否則少數人的權利永遠要看多數人的臉色。"
+          },
+          {
+            "id": "c",
+            "label": "兩者各管各的：公投可以決定政策走向，但不能讓法律違反憲法，所以要找出兩邊都尊重的做法。"
+          },
+          {
+            "id": "d",
+            "label": "如果人民真的不接受，正確的做法是走修憲的程序，而不是讓公投和解釋互相推翻。"
+          }
+        ],
+        "correctOptionIds": [],
+        "rationale": "這題沒有標準答案。多數人的決定和憲法的保障碰在一起時，要聽誰的，是民主社會裡最難、也最被反覆討論的問題。"
+      },
+      "explanation": {
+        "short": "這題沒有標準答案。多數人的決定和憲法的保障碰在一起時，要聽誰的，連專家也有不同的看法。上面每一種想法都有它合理的地方，也都藏著沒說出口的前提。",
+        "mechanism": "現行規則分散在幾個地方：憲法第17條說人民有創制、複決之權；憲法第78條說司法院解釋憲法；公民投票法第30條規定公民投票案通過後，主管機關和立法機關要怎麼處理（例如立法原則的創制案，行政院要在三個月內研擬提案）；憲法增修條文第12條規定，要修改憲法，需經立法院提案、決議，再由選舉人投票複決，同意票要超過選舉人總額的半數。這幾條條文沒有直接寫出「公投結果和憲法解釋衝突時，哪一個優先」，這正是爭議所在，本題不替任何一方下結論。",
+        "possibleReasons": "看重多數決的人，在意的是人民能不能真的決定自己的事；看重憲法保障的人，在意的是有些權利不該隨著多數人的意見改變。兩邊的出發點，都是想保護民主社會裡的人。",
+        "alternatives": "台灣處理過類似的情境：釋字第748號解釋要求有關機關在2年內修法，並說明用什麼形式保障，屬立法形成的範圍；後來立法機關制定的是專法（司法院釋字第七四八號解釋施行法）。這個例子顯示，解釋和立法的分工本身，就留有討論的空間。其他國家有的由憲法法院審查公投結果，有的把重要議題限定要修憲才能改，各國作法要另查。",
+        "limitations": "本題不判斷任何真實公投的結果是否有效，也不評論同性婚姻或其他任何議題本身。每個人的選擇，不能用來推論他的政治立場。",
+        "misconception": "「人民投票決定的，就是最終的」和「憲法保障的，多數人也不能動」聽起來都很有道理。但前者要回答：如果多數決可以改變任何事，少數人的基本權利由誰保護；後者要回答：由少數法官的解釋，來限制全民投票的結果，正當性從哪裡來。"
+      },
+      "epistemic": "disputed",
+      "disputeScope": "answer",
+      "evidenceIds": [
+        "l16",
+        "l17",
+        "l18",
+        "l19",
+        "l20",
+        "l21"
+      ],
+      "extensions": {
+        "civic.basis": [
+          {
+            "sourceId": "l19",
+            "locator": "憲法第17條",
+            "quote": "人民有選舉、罷免、創制及複決之權。"
+          },
+          {
+            "sourceId": "l18",
+            "locator": "憲法第78條",
+            "quote": "司法院解釋憲法，並有統一解釋法律及命令之權。"
+          },
+          {
+            "sourceId": "l17",
+            "locator": "公民投票法第30條第1項第2款",
+            "quote": "有關法律、自治條例立法原則之創制案，行政院、直轄市、縣（市）政府應於三個月內研擬相關之法律、自治條例提案，並送立法院、直轄市議會、縣（市）議會審議。"
+          },
+          {
+            "sourceId": "l20",
+            "locator": "憲法增修條文第12條",
+            "quote": "憲法之修改，須經立法院立法委員四分之一之提議，四分之三之出席，及出席委員四分之三之決議，提出憲法修正案，並於公告半年後，經中華民國自由地區選舉人投票複決，有效同意票過選舉人總額之半數，即通過之，不適用憲法第一百七十四條之規定。"
+          },
+          {
+            "sourceId": "l16",
+            "locator": "釋字第748號解釋文",
+            "quote": "有關機關應於本解釋公布之日起2年內，依本解釋意旨完成相關法律之修正或制定。至於以何種形式達成婚姻自由之平等保護，屬立法形成之範圍。"
+          },
+          {
+            "sourceId": "l21",
+            "locator": "司法院釋字第七四八號解釋施行法第2條",
+            "quote": "相同性別之二人，得為經營共同生活之目的，成立具有親密性及排他性之永久結合關係。"
+          }
+        ],
+        "civic.option-notes": {
+          "a": "這個想法假設投票的當下，已經代表了人民對這個問題完整的想法，而且多數人的決定可以處理「基本權利」這類問題。但憲法的設計，正是為了讓某些保障不被一時的多數改變。",
+          "b": "這個想法假設「權利」的內容和範圍是清楚的，而且由法官來判斷最合適。但什麼算是憲法保障的權利，本身常有爭議，不同時代、不同的人看法也不同。",
+          "c": "這個想法假設兩邊的要求可以同時被滿足。但有時候兩邊要的是相反的東西，「各管各的」的界線，本身就是爭議。",
+          "d": "這個想法假設修憲是可行的出路。但修憲的門檻很高，實際上可能長期做不到；而且它也等於承認：憲法的保障，只能用憲法的程序來改。"
+        },
+        "civic.views": [
+          {
+            "label": "著重多數決與直接民主的看法",
+            "text": "憲法承認人民有創制、複決之權，公民投票是人民直接表達意志的方式。如果解釋可以長期壓過全民投票的結果，人民會覺得自己的決定沒有用，民主的正當性也會受損。"
+          },
+          {
+            "label": "著重憲法保障與權利的看法",
+            "text": "憲法保障基本權利，就是為了讓少數人的權利不會隨多數人的意見而改變。如果多數決可以推翻對權利的保障，憲法的保障就失去了作用。"
+          },
+          {
+            "label": "著重程序與分工的看法",
+            "text": "公民投票是在憲法的框架內決定政策；真的要改變憲法的要求，應該走修憲的程序。分工清楚，兩種管道才不會互相拆台。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tw-death-penalty-court-17",
+      "version": "0.1.0",
+      "authorIds": [
+        "spec-editor"
+      ],
+      "language": "zh-Hant-TW",
+      "jurisdiction": "TW",
+      "intuition": {
+        "kind": "value",
+        "prompt": "多數人都支持的刑罰，法院不應該用自己的想法去限制它。",
+        "options": [
+          {
+            "id": "v1",
+            "label": "較同意"
+          },
+          {
+            "id": "v2",
+            "label": "較不同意"
+          },
+          {
+            "id": "v3",
+            "label": "尚無主張"
+          }
+        ]
+      },
+      "readingIds": [
+        "l22",
+        "l23",
+        "l04"
+      ],
+      "discussionPrompts": [
+        "如果一個制度長期受到多數人支持，法院還能不能檢驗它？",
+        "「限制死刑怎麼用」和「廢除死刑」有什麼不同？",
+        "程序上的嚴格要求，會怎麼影響被告、被害人家屬和社會？"
+      ],
+      "search": {
+        "profileId": "tw-death-penalty",
+        "keywords": [
+          "死刑 憲法法庭 生命權 民意",
+          "death penalty constitutional court public opinion"
+        ],
+        "categories": [
+          "news",
+          "argument",
+          "comparison",
+          "official",
+          "academic"
+        ],
+        "region": "TW",
+        "language": "zh-Hant"
+      },
+      "validity": {
+        "asOf": "2026-10-18",
+        "validFrom": "2026-10-17T16:00:00Z",
+        "validUntil": null,
+        "reviewDueAt": "2026-11-16T16:00:00Z",
+        "knowledgeVersion": "憲法第15條、第23條、113年憲判字第8號判決；2026-10-18 查閱官方條文與判決"
+      },
+      "governance": {
+        "lifecycle": "draft",
+        "verification": "unreviewed",
+        "lastReviewedAt": null,
+        "reviewers": [],
+        "notes": "沒有標準答案的題：每個選項都是真實的看法。待審：兩邊論點要由不同立場的審查者各看一次；不評論任何個案，也不討論存廢應不應該。"
+      },
+      "concepts": [
+        "civics.rule-of-law",
+        "civics.checks-and-balances"
+      ],
+      "topic": "死刑與多數民意",
+      "context": "一項刑罰由立法機關制定，長期以來，民意調查都顯示多數人支持維持它。有人說，既然是多數人的意思，法院就不該用自己的想法去限縮這項刑罰；也有人說，這項刑罰牽涉人的生命，不能只因為多數人支持，就不接受法院的檢驗。（這是假設情境，題目沒有說明是哪一個刑罰，也不評論個案。）",
+      "knowledge": {
+        "type": "reflection",
+        "prompt": "只知道這些，你覺得下面哪一個說法最合理？",
+        "options": [
+          {
+            "id": "a",
+            "label": "不可以。法律是民意代表依多數民意通過的，法院只能適用，不能因為法官自己的價值觀去限縮。"
+          },
+          {
+            "id": "b",
+            "label": "可以。生命是最根本的權利，限制它的法律一定要經得起檢驗，不能因為多數人支持就免檢驗。"
+          },
+          {
+            "id": "c",
+            "label": "可以要求審判的程序更嚴格，但不能直接宣告這項刑罰違憲，因為存廢應該由人民和立法者來決定。"
+          },
+          {
+            "id": "d",
+            "label": "法院可以檢驗，但標準要講清楚，也要給立法機關時間調整，否則法院就是在代替人民做決定。"
+          }
+        ],
+        "correctOptionIds": [],
+        "rationale": "這題沒有標準答案。多數人的支持和基本權利的檢驗碰在一起時，法院該做到哪裡，連專家也有不同的看法。"
+      },
+      "explanation": {
+        "short": "這題沒有標準答案。多數人的支持和基本權利的檢驗碰在一起時，法院該做到哪裡，連專家也有不同的看法。上面每一種想法都有它合理的地方，也都藏著沒說出口的前提。",
+        "mechanism": "憲法第15條保障人民的生存權，第23條說明基本權利只有在符合特定目的、必要時，才能用法律限制。憲法法庭113年憲判字第8號判決（主文第一項）認為：刑法規定的故意殺人罪中，以死刑為最重本刑的部分，只能適用於個案犯罪情節屬最嚴重，並且刑事程序符合憲法最嚴密的正當法律程序要求的情形，在這個範圍內「與憲法保障人民生命權之意旨尚屬無違」；也就是說，判決沒有宣告死刑整體違憲，而是設下了限制。判決主文也要求，科處死刑的判決，應經各級法院合議庭法官的一致決（主文第六項）。民意怎麼影響這個問題，條文本身沒有直接回答，也是這題爭議的核心。",
+        "possibleReasons": "主張法院應該克制的人，在意的是重大的價值選擇，應該由人民和立法者決定；主張法院應該檢驗的人，在意的是有些權利，不該因為多數人的意見而不受檢驗。兩邊的出發點，都是想保護人。",
+        "alternatives": "各國對死刑的處理方式很不同：有的國家已經廢除，有的保留，也有國家由法院限縮適用的範圍。各國的規定與判決要另查。",
+        "limitations": "本題不判斷死刑應不應該存在，也不評論任何個案。每個人的選擇，不能用來推論他的政治立場；答案頁引用的條文與判決主文，都以官方文字為準。",
+        "misconception": "「多數人支持的，法院就不該動」和「生命的事不能用民意決定」聽起來都很有道理。但前者要回答：如果基本權利可以完全由多數決定，檢驗的意義在哪裡；後者要回答：由少數法官來限制多數人支持的制度，正當性從哪裡來。"
+      },
+      "epistemic": "disputed",
+      "disputeScope": "answer",
+      "evidenceIds": [
+        "l22",
+        "l23",
+        "l04"
+      ],
+      "extensions": {
+        "civic.basis": [
+          {
+            "sourceId": "l23",
+            "locator": "憲法第15條",
+            "quote": "人民之生存權、工作權及財產權，應予保障。"
+          },
+          {
+            "sourceId": "l04",
+            "locator": "憲法第23條",
+            "quote": "以上各條列舉之自由權利，除為防止妨礙他人自由、避免緊急危難、維持社會秩序，或增進公共利益所必要者外，不得以法律限制之。"
+          },
+          {
+            "sourceId": "l22",
+            "locator": "113年憲判字第8號判決 主文第一項",
+            "quote": "僅得適用於個案犯罪情節屬最嚴重，且其刑事程序符合憲法最嚴密之正當法律程序要求之情形。"
+          },
+          {
+            "sourceId": "l22",
+            "locator": "113年憲判字第8號判決 主文第六項",
+            "quote": "科處死刑之判決，應經各級法院合議庭法官之一致決。"
+          }
+        ],
+        "civic.option-notes": {
+          "a": "這個想法假設民意代表制定的法律，永遠能代表多數人的真實想法，而且「適用法律」不涉及價值判斷。但憲法本身就是一種價值選擇，法院的工作之一，就是檢驗法律有沒有違反它。",
+          "b": "這個想法假設「生命權」的保護，一定要求檢驗的結果是限制甚至不能存在。但檢驗的結果也可能是「合憲」，而且「檢驗」和「該怎麼判」是兩件事。",
+          "c": "這個想法假設程序和實質可以乾淨地分開。但程序越嚴格，實際上能判的案件就越少，等於也在限縮刑罰；兩者的界線並不清楚。",
+          "d": "這個想法假設有一個「講清楚的標準」，而且給時間調整就可以化解衝突。但標準由誰定、期限多久才算足夠，本身也是爭議。"
+        },
+        "civic.views": [
+          {
+            "label": "著重尊重民意與立法的看法",
+            "text": "這項刑罰是立法者制定、並長期得到多數民意支持的制度。如果法院用自己的價值判斷去限縮，會讓人覺得少數法官取代了人民的決定。"
+          },
+          {
+            "label": "著重生命權與司法檢驗的看法",
+            "text": "生命權是最根本的基本權利，限制它的法律必須通過最嚴格的檢驗；民意再高，也不能取代這個檢驗，否則權利要看民意的臉色。"
+          },
+          {
+            "label": "著重分工與節制的看法",
+            "text": "法院可以要求審判程序更嚴謹，但這項制度要不要存在，是政策的選擇，應由人民和立法者討論；法院如果走得太快，會讓公共討論失去機會。"
+          }
+        ]
+      }
+    },
+    {
+      "id": "tw-deepfake-election-18",
+      "version": "0.1.0",
+      "authorIds": [
+        "spec-editor"
+      ],
+      "language": "zh-Hant-TW",
+      "jurisdiction": "TW",
+      "intuition": {
+        "kind": "value",
+        "prompt": "選舉期間，為了不讓選民被騙，政府應該可以禁止假影片。",
+        "options": [
+          {
+            "id": "v1",
+            "label": "較同意"
+          },
+          {
+            "id": "v2",
+            "label": "較不同意"
+          },
+          {
+            "id": "v3",
+            "label": "尚無主張"
+          }
+        ]
+      },
+      "readingIds": [
+        "l24",
+        "l25",
+        "l04"
+      ],
+      "discussionPrompts": [
+        "誰來決定一段影片是「真」還是「假」？這個決定如果出錯，代價是什麼？",
+        "諷刺、惡搞和欺騙，界線在哪裡？",
+        "澄清和更正，能趕得上謠言的速度嗎？"
+      ],
+      "search": {
+        "profileId": "tw-deepfake-election",
+        "keywords": [
+          "深度偽造 選舉 公職人員選舉罷免法 言論自由",
+          "deepfake election law free speech"
+        ],
+        "categories": [
+          "news",
+          "argument",
+          "comparison",
+          "official",
+          "academic"
+        ],
+        "region": "TW",
+        "language": "zh-Hant"
+      },
+      "validity": {
+        "asOf": "2026-10-18",
+        "validFrom": "2026-10-17T16:00:00Z",
+        "validUntil": null,
+        "reviewDueAt": "2026-11-16T16:00:00Z",
+        "knowledgeVersion": "公職人員選舉罷免法第104條、憲法第11條、第23條；2026-10-18 查閱官方條文"
+      },
+      "governance": {
+        "lifecycle": "draft",
+        "verification": "unreviewed",
+        "lastReviewedAt": null,
+        "reviewers": [],
+        "notes": "沒有標準答案的題：每個選項都是真實的看法。待審：不評論任何真實的案件、候選人或政黨；是否合憲本題不判斷。"
+      },
+      "concepts": [
+        "civics.legitimacy",
+        "civics.rule-of-law"
+      ],
+      "topic": "選舉前夕的假影片",
+      "context": "選舉前一個星期，網路上開始流傳一段候選人「發表談話」的影片，看起來和真的一模一樣，內容對他很不利。影片後來被查出是用人工智慧合成的，但在被澄清之前，已經被轉傳了幾十萬次。有人說，這種影片要用法律嚴格處理；也有人擔心，管得太寬會讓人不敢批評候選人。（這是假設情境，不指向任何真實的人或事件。）",
+      "knowledge": {
+        "type": "reflection",
+        "prompt": "只知道這些，你覺得下面哪一個說法最合理？",
+        "options": [
+          {
+            "id": "a",
+            "label": "選舉的公平比什麼都重要。只要是合成的候選人影音，選舉期間一律禁止，寧可管得多一點。"
+          },
+          {
+            "id": "b",
+            "label": "只處罰「明知不實、想影響選舉、又會造成損害」的，諷刺、惡搞等明顯不是真的內容，不應該處罰。"
+          },
+          {
+            "id": "c",
+            "label": "不用刑罰。改用事後澄清、平台標示與更正，因為由政府決定什麼是真的，本身就有風險。"
+          },
+          {
+            "id": "d",
+            "label": "可以處罰，但標準一定要非常清楚，否則候選人可能拿來告對手的批評，反而傷害選舉期間的言論自由。"
+          }
+        ],
+        "correctOptionIds": [],
+        "rationale": "這題沒有標準答案。保護選舉的公平，和保護選舉期間的言論自由，常常是互相拉扯的兩件事。"
+      },
+      "explanation": {
+        "short": "這題沒有標準答案。保護選舉的公平，和保護選舉期間的言論自由，常常是互相拉扯的兩件事。上面每一種想法都有它合理的地方，也都藏著沒說出口的前提。",
+        "mechanism": "目前的規則：公職人員選舉罷免法第104條第1項規定，意圖使候選人當選或不當選，或意圖使罷免案通過或否決，以文字、圖畫、錄音、錄影、演講或他法，散布謠言或傳播不實之事，足以生損害於公眾或他人者，處五年以下有期徒刑；第2項規定，用散布、播送或以他法供人觀覽候選人等人「深度偽造」的聲音、影像、電磁紀錄的方法，犯前項之罪的，處七年以下有期徒刑。所以現行法不是「一律禁止」，而是有條件的：要有意圖，要是不實的事，還要足以造成損害；同時，它採用的是刑罰。這些規定是否符合憲法第11條保障的言論自由、第23條的限制條件，本題不判斷。",
+        "possibleReasons": "主張要有明確處罰的人，在意的是謠言傳得快、澄清得慢，選民來不及分辨，結果可能被扭曲；主張要小心的人，在意的是由政府判斷「真假」容易被拿來壓制批評，選舉期間正是言論最需要自由的時候。",
+        "alternatives": "不同的社會有不同的做法：有的用刑罰，有的只要求標示合成內容，有的靠平台自律與事後更正。各國規定要另查。",
+        "limitations": "本題不判斷任何真實的影片是否違法，也不評論任何候選人或政黨。每個人的選擇，不能用來推論他的政治立場。",
+        "misconception": "「選舉的公平要保護，所以要嚴格禁止」和「政府不該決定什麼是真的，所以不要用刑罰」聽起來都很有道理。但前者要回答：由誰判斷、判斷錯了怎麼辦；後者要回答：如果謠言已經傳開、澄清來不及，選舉的公平由誰保護。"
+      },
+      "epistemic": "disputed",
+      "disputeScope": "answer",
+      "evidenceIds": [
+        "l24",
+        "l25",
+        "l04"
+      ],
+      "extensions": {
+        "civic.basis": [
+          {
+            "sourceId": "l24",
+            "locator": "公職人員選舉罷免法第104條第1項",
+            "quote": "意圖使候選人當選或不當選，或意圖使被罷免人罷免案通過或否決者，以文字、圖畫、錄音、錄影、演講或他法，散布謠言或傳播不實之事，足以生損害於公眾或他人者，處五年以下有期徒刑。"
+          },
+          {
+            "sourceId": "l24",
+            "locator": "公職人員選舉罷免法第104條第2項",
+            "quote": "以散布、播送或以他法供人觀覽候選人、被罷免人、罷免案提議人之領銜人本人之深度偽造聲音、影像、電磁紀錄之方法，犯前項之罪者，處七年以下有期徒刑。"
+          },
+          {
+            "sourceId": "l25",
+            "locator": "憲法第11條",
+            "quote": "人民有言論、講學、著作及出版之自由。"
+          },
+          {
+            "sourceId": "l04",
+            "locator": "憲法第23條",
+            "quote": "以上各條列舉之自由權利，除為防止妨礙他人自由、避免緊急危難、維持社會秩序，或增進公共利益所必要者外，不得以法律限制之。"
+          }
+        ],
+        "civic.option-notes": {
+          "a": "這個想法假設「合成」就等於「欺騙」，而且我們可以事先分辨。但合成技術也被用在諷刺、藝術和明顯的玩笑，一律禁止，會連這些一起管到。",
+          "b": "這個想法假設「明知」「意圖」「足以損害」都能被可靠地證明。但實際上，要證明別人心裡的意圖並不容易，而這些判斷也還是由人（法院）來做。",
+          "c": "這個想法假設事後澄清來得及，而且平台願意配合。但在選舉的關鍵幾天，錯誤的資訊可能在澄清之前，已經影響了投票。",
+          "d": "這個想法假設「清楚的標準」做得到。但科技變化很快，今天清楚的標準，明天就可能有漏洞；而太模糊或太僵硬，都有各自的代價。"
+        },
+        "civic.views": [
+          {
+            "label": "著重保護選舉公平的看法",
+            "text": "選舉前夕，謠言和假影片傳得快、澄清得慢，選民來不及分辨，選舉結果可能因此被扭曲，所以需要明確的處罰與規範。"
+          },
+          {
+            "label": "著重保護言論自由的看法",
+            "text": "由政府決定什麼是「不實」，容易被用來壓制批評；選舉期間正是言論最需要自由的時候，刑罰會讓人不敢說話。"
+          },
+          {
+            "label": "著重標準與手段的看法",
+            "text": "重點不是要不要管，而是怎麼管：標準是否清楚（例如是否要求意圖與足以生損害）、刑罰是不是必要的手段，還是澄清、標示等比較輕的方式就夠了。"
+          }
+        ]
+      }
+    }
+  ]
+}

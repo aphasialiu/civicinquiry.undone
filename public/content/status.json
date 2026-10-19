@@ -1,0 +1,160 @@
+{
+  "generatedAt": "2026-10-19T10:53:43.478Z",
+  "expiresAt": "2026-10-20T10:53:43.478Z",
+  "entries": [
+    {
+      "itemId": "tw-budget-01",
+      "version": "0.1.0",
+      "locale": "zh-Hant-TW",
+      "sha256": "b3994354c54a80f234642ede7d2f626d9fe3603cb9b9a96be52ebabd85fdf8e1",
+      "lifecycle": "draft",
+      "verification": "unreviewed",
+      "reviewerOrg": null,
+      "reason": null,
+      "supersededBy": null
+    },
+    {
+      "itemId": "tw-majority-02",
+      "version": "0.1.0",
+      "locale": "zh-Hant-TW",
+      "sha256": "9c802ecd49ca0ae03faacaa4f55cb9339a2fa1fdb0f12c90a3fbb8bc6542c53c",
+      "lifecycle": "draft",
+      "verification": "unreviewed",
+      "reviewerOrg": null,
+      "reason": null,
+      "supersededBy": null
+    },
+    {
+      "itemId": "tw-dissolution-03",
+      "version": "0.1.0",
+      "locale": "zh-Hant-TW",
+      "sha256": "96f08d22586b153c760f9d3dbe70d98ec7349d74c756679dde3b3afd3c5daeef",
+      "lifecycle": "draft",
+      "verification": "unreviewed",
+      "reviewerOrg": null,
+      "reason": null,
+      "supersededBy": null
+    },
+    {
+      "itemId": "tw-president-report-04",
+      "version": "0.1.0",
+      "locale": "zh-Hant-TW",
+      "sha256": "9d1271a886aee8942ddc8dc0196857cd2a3476df2375448fbc2fc242f9d9f314",
+      "lifecycle": "draft",
+      "verification": "unreviewed",
+      "reviewerOrg": null,
+      "reason": null,
+      "supersededBy": null
+    },
+    {
+      "itemId": "tw-conflicting-duties-09",
+      "version": "0.1.0",
+      "locale": "zh-Hant-TW",
+      "sha256": "bccaa476a53036cb8b01580cab73a0a65e50b5ca6e82ddfd19d3b6f8c046037a",
+      "lifecycle": "draft",
+      "verification": "unreviewed",
+      "reviewerOrg": null,
+      "reason": null,
+      "supersededBy": null
+    },
+    {
+      "itemId": "tw-emergency-10",
+      "version": "0.1.0",
+      "locale": "zh-Hant-TW",
+      "sha256": "e54e3657b08ffca4a56c220947b8ecca19e0a55f30cc7d756b61b09b4a3d44b2",
+      "lifecycle": "draft",
+      "verification": "unreviewed",
+      "reviewerOrg": null,
+      "reason": null,
+      "supersededBy": null
+    },
+    {
+      "itemId": "tw-executive-responsibility-11",
+      "version": "0.1.0",
+      "locale": "zh-Hant-TW",
+      "sha256": "e40562116145630b779365baa35f605c85f1b6dfaebd5faf17d898c6ca4d788b",
+      "lifecycle": "draft",
+      "verification": "unreviewed",
+      "reviewerOrg": null,
+      "reason": null,
+      "supersededBy": null
+    },
+    {
+      "itemId": "tw-advertising-12",
+      "version": "0.1.0",
+      "locale": "zh-Hant-TW",
+      "sha256": "79ba951b2c7bc0e7d5d2d36458e41961c3003edfd5d0368b7705b21ef0d34036",
+      "lifecycle": "draft",
+      "verification": "unreviewed",
+      "reviewerOrg": null,
+      "reason": null,
+      "supersededBy": null
+    },
+    {
+      "itemId": "tw-reconsideration-13",
+      "version": "0.1.0",
+      "locale": "zh-Hant-TW",
+      "sha256": "acff3968977d5b40339b3a9791c1bcbf5e7b4840da675e96cbe6bf15f5a3d3d1",
+      "lifecycle": "draft",
+      "verification": "unreviewed",
+      "reviewerOrg": null,
+      "reason": null,
+      "supersededBy": null
+    },
+    {
+      "itemId": "tw-judicial-budget-14",
+      "version": "0.1.0",
+      "locale": "zh-Hant-TW",
+      "sha256": "474e7c1931d1306f692dc1502e5a678337610c82e6955e08496f2c42a43df9f7",
+      "lifecycle": "draft",
+      "verification": "unreviewed",
+      "reviewerOrg": null,
+      "reason": null,
+      "supersededBy": null
+    },
+    {
+      "itemId": "tw-civil-disobedience-15",
+      "version": "0.1.0",
+      "locale": "zh-Hant-TW",
+      "sha256": "030698327ac91ef37713452531ab36c658f7f09b0a667aa9d900149242ede94f",
+      "lifecycle": "draft",
+      "verification": "unreviewed",
+      "reviewerOrg": null,
+      "reason": null,
+      "supersededBy": null
+    },
+    {
+      "itemId": "tw-referendum-vs-court-16",
+      "version": "0.1.0",
+      "locale": "zh-Hant-TW",
+      "sha256": "97b2d9e7de5f06759d9a5b7f6549d96aa0f80039c6f643a5c8dfab5a2429b4c4",
+      "lifecycle": "draft",
+      "verification": "unreviewed",
+      "reviewerOrg": null,
+      "reason": null,
+      "supersededBy": null
+    },
+    {
+      "itemId": "tw-death-penalty-court-17",
+      "version": "0.1.0",
+      "locale": "zh-Hant-TW",
+      "sha256": "455e072d4b6b40a3b8368b96ceee5b301f9cf7860ab7f9303be815d09db17e3b",
+      "lifecycle": "draft",
+      "verification": "unreviewed",
+      "reviewerOrg": null,
+      "reason": null,
+      "supersededBy": null
+    },
+    {
+      "itemId": "tw-deepfake-election-18",
+      "version": "0.1.0",
+      "locale": "zh-Hant-TW",
+      "sha256": "ef4e2ba0c5364cc2daf7609cb255bf0b5c70d247c82aee1ba53b9ab2761d91ce",
+      "lifecycle": "draft",
+      "verification": "unreviewed",
+      "reviewerOrg": null,
+      "reason": null,
+      "supersededBy": null
+    }
+  ]
+}

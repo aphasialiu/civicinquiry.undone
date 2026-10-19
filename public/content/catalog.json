@@ -1,0 +1,17 @@
+{
+  "generatedAt": "2026-10-19T10:53:43.478Z",
+  "quizzes": [
+    {
+      "namespace": "prototype.tw",
+      "quizId": "constitution",
+      "version": "0.1.0",
+      "locale": "zh-Hant-TW",
+      "title": "民主不是你想的那樣",
+      "description": "這是供訪談、教育試測與格式驗證的原型題庫，法源經初步比對，尚未經過獨立的法律與教育專業審查。",
+      "itemCount": 14,
+      "path": "/content/prototype.tw/constitution/0.1.0/zh-Hant-TW.json",
+      "sha256": "1bd0061f0e950fef770f55c92d7f03bb9e70870a6cb1aa823762e3a47d70de66",
+      "bytes": 94554
+    }
+  ]
+}

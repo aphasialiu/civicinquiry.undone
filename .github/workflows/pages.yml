@@ -1,0 +1,45 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+  schedule:
+    # 每週重新發布一次，順便延長題庫的有效期限
+    - cron: '17 3 * * 1'
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: pages
+  cancel-in-progress: true
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+          cache: npm
+      - run: npm ci
+      - run: npm test
+      - name: Build (static, no search panel)
+        run: npm run build:static
+        env:
+          VITE_BASE: /${{ github.event.repository.name }}/
+          # 靜態網站沒有撤回服務（撤回＝改檔重新發布），有效期設 60 天；排程每週重發一次
+          STATUS_TTL_HOURS: 1440
+      - uses: actions/configure-pages@v5
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: dist-static
+      - id: deployment
+        uses: actions/deploy-pages@v4

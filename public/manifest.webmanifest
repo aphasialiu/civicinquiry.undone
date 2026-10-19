@@ -1,0 +1,10 @@
+{
+  "name": "反直覺知識測驗與公共議題探索（教育原型）",
+  "short_name": "反直覺測驗",
+  "start_url": "/",
+  "display": "standalone",
+  "lang": "zh-Hant-TW",
+  "background_color": "#fbfaf7",
+  "theme_color": "#0b5cad",
+  "icons": [{ "src": "/icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any" }]
+}

@@ -1,0 +1,16 @@
+node_modules
+dist
+dist-static
+dist-pwa
+dist-single
+test-results
+playwright-report
+.tmp
+screenshots
+試答版
+*.tmp.mjs
+*.tmp.ts
+.env
+.env.*
+公開版
+.claude

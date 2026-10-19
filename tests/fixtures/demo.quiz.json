@@ -1,0 +1,53 @@
+{
+  "schemaVersion": "1.0.0",
+  "namespace": "prototype.tw",
+  "quizId": "constitution",
+  "version": "0.1.0",
+  "title": "臺灣民主與憲政：教育原型",
+  "description": "單題完整交換範例；法源初核，尚未經獨立專業審查。",
+  "locale": "zh-Hant-TW",
+  "direction": "ltr",
+  "license": "UNLICENSED",
+  "authors": [{"id": "spec-editor", "displayName": "規格編製原型", "credentialText": "AI協助整理；不代表法律專業認證"}],
+  "sources": [
+    {
+      "id": "tw-constitution", "title": "中華民國憲法", "url": "https://law.moj.gov.tw/LawClass/LawAll.aspx?pcode=A0000001",
+      "type": "law", "publisher": "全國法規資料庫", "publishedAt": "1947-01-01", "accessedAt": "2026-10-17",
+      "locator": "第63條與第70條；須與增修條文及相關解釋合讀", "rights": "link_only"
+    },
+    {
+      "id": "j391", "title": "司法院釋字第391號解釋", "url": "https://cons.judicial.gov.tw/docdata.aspx?fid=100&id=310572",
+      "type": "judgment", "publisher": "憲法法庭", "publishedAt": "1995-12-08", "accessedAt": "2026-10-17",
+      "locator": "解釋文：中央政府總預算案款項目節間移動增減之限制", "rights": "link_only"
+    }
+  ],
+  "items": [
+    {
+      "id": "tw-budget-01", "version": "0.1.0", "authorIds": ["spec-editor"], "concepts": ["civics.separation", "civics.accountability"],
+      "topic": "政府資源由誰安排", "language": "zh-Hant-TW", "jurisdiction": "TW",
+      "context": "立法院正在審議行政院提出的中央政府總預算案；以下只談立法院自行刪減交通項目並增加教育項目的情形，不是行政院另提修正方案。",
+      "intuition": {
+        "kind": "value", "prompt": "你認為，民意代表應有多大的預算重分配空間？",
+        "options": [{"id": "broad", "label": "總額不變就應能自行重分配"}, {"id": "limited", "label": "應受行政與立法分工限制"}, {"id": "unsure", "label": "尚無主張"}]
+      },
+      "knowledge": {
+        "type": "single", "prompt": "依現行憲法與釋字391，總額不變是否就足以允許題述調整？",
+        "options": [{"id": "a", "label": "是，總額不增加就沒有增加支出問題"}, {"id": "b", "label": "否，新增或增加個別項目仍涉及憲法限制"}, {"id": "c", "label": "只要教育比較重要就可以"}],
+        "correctOptionIds": ["b"], "rationale": "憲法第70條與釋字391解釋文；總額不變不能單獨排除個別項目增加支出的限制。"
+      },
+      "explanation": {
+        "short": "總額沒有增加，不代表每個項目都沒有增加。這題問的是現行權限分工，不是你是否支持增加教育經費。",
+        "mechanism": "釋字391對審議中央政府總預算案中的項目移動增減設有限制。",
+        "possibleReasons": "該解釋以政策責任歸屬及行政立法分工說明限制。",
+        "alternatives": "是否應擴大國會預算修正空間可以討論；其他國家的制度須另查法源。",
+        "limitations": "不能用本題直接判斷所有刪減、凍結、附帶決議或追加預算是否合憲；各有不同條件。",
+        "misconception": "把總額不變等同每項支出均未增加。"
+      },
+      "epistemic": "disputed", "disputeScope": "rationale", "evidenceIds": ["tw-constitution", "j391"], "readingIds": ["j391"],
+      "discussionPrompts": ["總額與個別項目是同一件事嗎？", "你支持的制度改革，和目前的權限分工有何不同？", "報導引用的是解釋文還是不同意見？"],
+      "search": {"profileId": "tw-budget", "keywords": ["中央政府總預算 項目移動 釋字391", "國會 預算修正權 比較"], "categories": ["news", "argument", "comparison", "official", "academic"], "region": "TW", "language": "zh-Hant"},
+      "validity": {"asOf": "2026-10-17", "validFrom": "2026-10-16T16:00:00Z", "validUntil": null, "reviewDueAt": "2026-11-15T16:00:00Z", "knowledgeVersion": "憲法第70條及釋字391；2026-10-17初查，不代表已完成後續法制排除查核"},
+      "governance": {"lifecycle": "draft", "verification": "unreviewed", "lastReviewedAt": null, "reviewers": [], "notes": "官方法源已初查；專業法律與教育審查尚未完成。法規資料庫整編延遲須於發布前補查。"}
+    }
+  ]
+}

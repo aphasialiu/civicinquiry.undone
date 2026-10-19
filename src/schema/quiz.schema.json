@@ -1,0 +1,148 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "urn:civic-inquiry:quiz:1.0.0",
+  "title": "通用反直覺題庫交換格式",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "namespace", "quizId", "version", "title", "description", "locale", "direction", "license", "authors", "sources", "items"],
+  "properties": {
+    "schemaVersion": {"const": "1.0.0"},
+    "namespace": {"$ref": "#/$defs/id"},
+    "quizId": {"$ref": "#/$defs/id"},
+    "version": {"$ref": "#/$defs/version"},
+    "title": {"type": "string", "minLength": 1, "maxLength": 150},
+    "description": {"$ref": "#/$defs/text"},
+    "locale": {"$ref": "#/$defs/locale"},
+    "direction": {"enum": ["ltr", "rtl"]},
+    "license": {"type": "string", "minLength": 1, "maxLength": 300},
+    "authors": {"type": "array", "minItems": 1, "maxItems": 50, "items": {"$ref": "#/$defs/author"}},
+    "sources": {"type": "array", "maxItems": 2000, "items": {"$ref": "#/$defs/source"}},
+    "items": {"type": "array", "minItems": 1, "maxItems": 500, "items": {"$ref": "#/$defs/item"}}
+  },
+  "$defs": {
+    "id": {"type": "string", "pattern": "^[a-z0-9][a-z0-9.-]{0,79}$"},
+    "version": {"type": "string", "pattern": "^(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)\\.(0|[1-9][0-9]*)$"},
+    "locale": {"type": "string", "minLength": 2, "maxLength": 35, "pattern": "^[a-zA-Z]{2,8}(-[a-zA-Z0-9]{1,8})*$"},
+    "text": {"type": "string", "minLength": 1, "maxLength": 12000},
+    "date": {"type": "string", "format": "date"},
+    "time": {"type": "string", "format": "date-time"},
+    "ids": {"type": "array", "uniqueItems": true, "maxItems": 100, "items": {"$ref": "#/$defs/id"}},
+    "author": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "displayName", "credentialText"],
+      "properties": {"id": {"$ref": "#/$defs/id"}, "displayName": {"type": "string", "minLength": 1, "maxLength": 100}, "credentialText": {"type": "string", "maxLength": 500}}
+    },
+    "source": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "title", "url", "type", "publisher", "publishedAt", "accessedAt", "locator", "rights"],
+      "properties": {
+        "id": {"$ref": "#/$defs/id"}, "title": {"type": "string", "minLength": 1, "maxLength": 500},
+        "url": {"type": "string", "format": "uri", "pattern": "^https?://", "maxLength": 2048},
+        "type": {"enum": ["law", "judgment", "research", "reporting", "commentary", "official", "other"]},
+        "publisher": {"type": "string", "minLength": 1, "maxLength": 200},
+        "publishedAt": {"anyOf": [{"$ref": "#/$defs/date"}, {"type": "null"}]},
+        "accessedAt": {"$ref": "#/$defs/date"}, "locator": {"$ref": "#/$defs/text"},
+        "rights": {"enum": ["link_only", "permission", "open_license", "unknown"]},
+        "license": {"type": "string", "maxLength": 500}
+      }
+    },
+    "option": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "label"],
+      "properties": {"id": {"$ref": "#/$defs/id"}, "label": {"type": "string", "minLength": 1, "maxLength": 800}}
+    },
+    "intuition": {
+      "type": "object", "additionalProperties": false,
+      "required": ["kind", "prompt", "options"],
+      "properties": {
+        "kind": {"enum": ["value", "prediction"]}, "prompt": {"$ref": "#/$defs/text"},
+        "options": {"type": "array", "minItems": 2, "maxItems": 8, "items": {"$ref": "#/$defs/option"}}
+      }
+    },
+    "knowledge": {
+      "type": "object", "additionalProperties": false,
+      "required": ["type", "prompt", "options", "correctOptionIds", "rationale"],
+      "properties": {
+        "type": {"enum": ["single", "multiple", "reflection"]},
+        "prompt": {"$ref": "#/$defs/text"},
+        "options": {"type": "array", "maxItems": 8, "items": {"$ref": "#/$defs/option"}},
+        "correctOptionIds": {"type": "array", "maxItems": 8, "uniqueItems": true, "items": {"$ref": "#/$defs/id"}},
+        "rationale": {"$ref": "#/$defs/text"}
+      },
+      "allOf": [
+        {"if": {"properties": {"type": {"const": "single"}}}, "then": {"properties": {"options": {"minItems": 2}, "correctOptionIds": {"minItems": 1, "maxItems": 1}}}},
+        {"if": {"properties": {"type": {"const": "multiple"}}}, "then": {"properties": {"options": {"minItems": 2}, "correctOptionIds": {"minItems": 1}}}},
+        {"if": {"properties": {"type": {"const": "reflection"}}}, "then": {"properties": {"correctOptionIds": {"maxItems": 0}}}}
+      ]
+    },
+    "explanation": {
+      "type": "object", "additionalProperties": false,
+      "required": ["short", "mechanism", "possibleReasons", "alternatives", "limitations", "misconception"],
+      "properties": {
+        "short": {"type": "string", "minLength": 1, "maxLength": 600},
+        "mechanism": {"$ref": "#/$defs/text"}, "possibleReasons": {"$ref": "#/$defs/text"},
+        "alternatives": {"$ref": "#/$defs/text"}, "limitations": {"$ref": "#/$defs/text"}, "misconception": {"$ref": "#/$defs/text"}
+      }
+    },
+    "search": {
+      "type": "object", "additionalProperties": false,
+      "required": ["profileId", "keywords", "categories", "region", "language"],
+      "properties": {
+        "profileId": {"$ref": "#/$defs/id"},
+        "keywords": {"type": "array", "minItems": 1, "maxItems": 10, "items": {"type": "string", "minLength": 1, "maxLength": 100}},
+        "categories": {"type": "array", "minItems": 1, "uniqueItems": true, "items": {"enum": ["news", "argument", "comparison", "official", "academic"]}},
+        "region": {"type": "string", "minLength": 2, "maxLength": 50}, "language": {"$ref": "#/$defs/locale"}
+      }
+    },
+    "validity": {
+      "type": "object", "additionalProperties": false,
+      "required": ["asOf", "validFrom", "validUntil", "reviewDueAt", "knowledgeVersion"],
+      "properties": {
+        "asOf": {"$ref": "#/$defs/date"}, "validFrom": {"$ref": "#/$defs/time"},
+        "validUntil": {"anyOf": [{"$ref": "#/$defs/time"}, {"type": "null"}]},
+        "reviewDueAt": {"$ref": "#/$defs/time"}, "knowledgeVersion": {"$ref": "#/$defs/text"}
+      }
+    },
+    "reviewer": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "scope", "decision", "reviewedAt", "notes"],
+      "properties": {
+        "id": {"$ref": "#/$defs/id"}, "scope": {"enum": ["domain", "education"]},
+        "decision": {"enum": ["approve", "revise", "reject"]}, "reviewedAt": {"$ref": "#/$defs/time"}, "notes": {"$ref": "#/$defs/text"}
+      }
+    },
+    "governance": {
+      "type": "object", "additionalProperties": false,
+      "required": ["lifecycle", "verification", "lastReviewedAt", "reviewers", "notes"],
+      "properties": {
+        "lifecycle": {"enum": ["draft", "published", "expired", "withdrawn"]},
+        "verification": {"enum": ["unreviewed", "pending", "reviewed"]},
+        "lastReviewedAt": {"anyOf": [{"$ref": "#/$defs/time"}, {"type": "null"}]},
+        "reviewers": {"type": "array", "maxItems": 20, "items": {"$ref": "#/$defs/reviewer"}},
+        "notes": {"$ref": "#/$defs/text"}
+      }
+    },
+    "item": {
+      "type": "object", "additionalProperties": false,
+      "required": ["id", "version", "authorIds", "concepts", "topic", "language", "jurisdiction", "context", "intuition", "knowledge", "explanation", "epistemic", "disputeScope", "evidenceIds", "readingIds", "discussionPrompts", "search", "validity", "governance"],
+      "properties": {
+        "id": {"$ref": "#/$defs/id"}, "version": {"$ref": "#/$defs/version"},
+        "authorIds": {"type": "array", "minItems": 1, "maxItems": 50, "uniqueItems": true, "items": {"$ref": "#/$defs/id"}},
+        "concepts": {"type": "array", "minItems": 1, "maxItems": 10, "uniqueItems": true, "items": {"$ref": "#/$defs/id"}},
+        "topic": {"type": "string", "minLength": 1, "maxLength": 150},
+        "language": {"$ref": "#/$defs/locale"}, "jurisdiction": {"type": "string", "minLength": 1, "maxLength": 100},
+        "context": {"$ref": "#/$defs/text"}, "intuition": {"$ref": "#/$defs/intuition"},
+        "knowledge": {"$ref": "#/$defs/knowledge"}, "explanation": {"$ref": "#/$defs/explanation"},
+        "epistemic": {"enum": ["settled", "disputed", "uncertain"]}, "disputeScope": {"enum": ["none", "rationale", "answer"]},
+        "evidenceIds": {"$ref": "#/$defs/ids"}, "readingIds": {"$ref": "#/$defs/ids"},
+        "discussionPrompts": {"type": "array", "minItems": 1, "maxItems": 5, "items": {"$ref": "#/$defs/text"}},
+        "search": {"$ref": "#/$defs/search"}, "validity": {"$ref": "#/$defs/validity"}, "governance": {"$ref": "#/$defs/governance"},
+        "translationOf": {
+          "type": "object", "additionalProperties": false, "required": ["id", "version", "locale"],
+          "properties": {"id": {"$ref": "#/$defs/id"}, "version": {"$ref": "#/$defs/version"}, "locale": {"$ref": "#/$defs/locale"}}
+        },
+        "extensions": {"type": "object", "propertyNames": {"pattern": "^[a-z][a-z0-9.-]*\\.[a-z][a-z0-9.-]*$"}}
+      }
+    }
+  }
+}
